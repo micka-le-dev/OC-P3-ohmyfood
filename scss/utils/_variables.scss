@@ -11,3 +11,9 @@ $couleur-tres-claire: #fff;
 /* polices */
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
+
+/* variables css */
+:root{
+    --largeur-btn: 218px;
+    --hauteur-btn: 50px;
+}
