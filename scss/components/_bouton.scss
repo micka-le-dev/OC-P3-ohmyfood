@@ -12,4 +12,8 @@
     font-size: 15px;
 
     background-image: linear-gradient(to bottom, $couleur-secondaire, $couleur-primaire);
+    
+    &:hover{
+        background-image: linear-gradient(to bottom, lighten($couleur-secondaire,10%), lighten($couleur-primaire,10%));
+    }
 }
