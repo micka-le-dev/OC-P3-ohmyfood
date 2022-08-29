@@ -22,16 +22,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-            <h1 class="header__logo-titre">ohmyfood</h1>
-            <p class="header__zone"><i class="fa-solid fa-location-dot header__icone-position"></i> Paris, Belleville</p>
-            <div class="header__conseil-et-explorer">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p class="header__conseil">Découvrez des restaurant d'exception, séléctionnés par nos soins.</p>
-                <button class="header__btn-explorer btn-principal">Explorer nos restaurants</button>
-            </div>
+    <header class="header">
+        <!-- <a href="index.html" class="header__lien-retour"><i class="fa-solid fa-arrow-left"></i></a> -->
+        <h1 class="header__logo-titre">ohmyfood</h1>
     </header>
     <main>
+        <section class="lieu">
+            <p class="lieu__zone"><i class="fa-solid fa-location-dot lieu__icone-position"></i> Paris, Belleville</p>
+            <div class="lieu__conseil-et-explorer">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p class="lieu__conseil">Découvrez des restaurant d'exception, séléctionnés par nos soins.</p>
+                <button class="lieu__btn-explorer btn-principal">Explorer nos restaurants</button>
+            </div>    
+        </section>
+
         <aside class="manuel">
             <h2>Fonctionnement</h2>
             <ol>
@@ -40,6 +44,7 @@
                 <li class="manuel__etape"><i class="fa-solid fa-store manuel__icone manuel__icone-restaurant"></i> <span class="manuel__instruction">Dégustez au restaurant</span></li>
             </ol>
         </aside>
+        
         <section class="restaurants">
             <h2>Restaurants</h2>
             <a href="#" class="carte">
