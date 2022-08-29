@@ -4,11 +4,9 @@
     background-color: transparent;
 
     color: transparent;
-    text-stroke: 1px #000;
     -webkit-text-stroke: 1px #000;
 
     &:hover{
-        text-stroke-color: transparent;
         -webkit-text-stroke-color: transparent;
         background-image: linear-gradient(to top, $couleur-secondaire, $couleur-primaire);
     }
