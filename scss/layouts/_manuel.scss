@@ -1,0 +1,38 @@
+
+.manuel{
+    & > ol{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+    
+    &__etape{
+        width: 323px;
+        height: 73px;
+        background-color: #f6f6f6;
+        box-shadow: 0 10px 10px #0002;
+        border-radius: 16px;
+
+        display: flex;
+        align-items: center;
+        padding-left: 36px;
+    }
+    &__icone{
+        color: #7e7e7e;
+        display: inline-block;
+        width: 18px;
+        text-align: center;
+    }
+    &__instruction{
+        font-weight: bold;
+        margin-left: 21px;
+    }
+
+    &__etape:last-child{
+        background-color: #f5edff;
+    }
+    &__etape:last-child > &__icone{
+        color: $couleur-primaire;
+    }
+}
