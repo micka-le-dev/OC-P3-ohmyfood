@@ -1,0 +1,21 @@
+
+.header{
+    position: relative;
+    height: 64px;
+
+    &__lien-retour{
+        display: block;
+        width: 25px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+
+        font-size: 20px;
+    }
+
+    &__logo-titre{
+        text-align: center;
+        padding-top: 10px;
+        font-family: $police-titre;
+    }
+}
