@@ -5,24 +5,50 @@
         flex-direction: column;
         align-items: center;
         row-gap: 25px;
+
+        list-style: none;
+        counter-reset: li
     }
     
     &__etape{
+        position: relative;
         width: 323px;
         height: 73px;
         background-color: #f6f6f6;
-        box-shadow: 0 10px 10px #0002;
+        box-shadow: 0 3px 10px #0002;
         border-radius: 16px;
 
         display: flex;
         align-items: center;
         padding-left: 36px;
+
+        counter-increment: li;
+        &::before{
+            content: counter(li);
+            position: absolute;
+            left:calc(-1 * $largeur-numero-liste/2);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            aspect-ratio: 1/1;
+            width: $largeur-numero-liste;
+            border-radius: $largeur-numero-liste;
+
+            color: $couleur-tres-claire;
+            background-color: $couleur-primaire;
+
+            font-size: 14px;
+        }
     }
+
     &__icone{
         color: #7e7e7e;
         display: inline-block;
         width: 18px;
         text-align: center;
+        font-size: 19px;
     }
     &__instruction{
         font-weight: bold;
