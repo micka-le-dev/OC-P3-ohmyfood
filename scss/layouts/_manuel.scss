@@ -1,0 +1,64 @@
+
+.manuel{
+    & > ol{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: $gap-liste;
+
+        list-style: none;
+        counter-reset: li
+    }
+    
+    &__etape{
+        position: relative;
+        width: $largeur-etape-liste;
+        height: $lhauteur-etape-liste;
+        background-color: darken($couleur-tres-claire, 3.5%); //#f6f6f6
+        box-shadow: 0 3px 10px #0002;
+        border-radius: 16px;
+
+        display: flex;
+        align-items: center;
+        padding-left: 36px;
+
+        counter-increment: li;
+        &::before{
+            content: counter(li);
+            position: absolute;
+            left:calc(-1 * $largeur-numero-liste/2);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            aspect-ratio: 1/1;
+            width: $largeur-numero-liste;
+            border-radius: $largeur-numero-liste;
+
+            color: $couleur-tres-claire;
+            background-color: $couleur-primaire;
+
+            font-size: 14px;
+        }
+    }
+
+    &__icone{
+        color: darken($couleur-tres-claire, 50.6%); //#7e7e7e
+        display: inline-block;
+        width: 19px;
+        text-align: center;
+        font-size: 19px;
+    }
+    &__instruction{
+        font-weight: bold;
+        margin-left: 21px;
+    }
+
+    &__etape:last-child{
+        background-color: $couleur-dernere-etape-liste;
+    }
+    &__etape:last-child > &__icone{
+        color: $couleur-primaire;
+    }
+}

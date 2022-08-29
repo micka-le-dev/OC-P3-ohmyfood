@@ -1,0 +1,13 @@
+.btn-j-aime{
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: transparent;
+
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+
+    &:hover{
+        -webkit-text-stroke-color: transparent;
+        background-image: linear-gradient(to top, $couleur-secondaire, $couleur-primaire);
+    }
+}
