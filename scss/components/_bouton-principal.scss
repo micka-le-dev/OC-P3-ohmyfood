@@ -2,7 +2,7 @@
 .btn-principal{
     width: var(--largeur-btn);
     height: var(--hauteur-btn);
-    margin: 0 calc(50% - var(--largeur-btn)/2);
+    margin: 0 calc(50% - var(--largeur-btn)/2); /* pour centrer */
     border-radius: var(--hauteur-btn);
     
     text-align: center;
