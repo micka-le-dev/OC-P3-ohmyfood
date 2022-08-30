@@ -1,5 +1,11 @@
 
 .manuel{
+    padding: 50px $padding-cotes 68px;
+
+    &__titre{
+        width: 90%;
+    }
+
     & > ol{
         display: flex;
         flex-direction: column;
@@ -12,7 +18,8 @@
     
     &__etape{
         position: relative;
-        width: $largeur-etape-liste;
+        //width: $largeur-etape-liste;
+        width: calc(100% - $padding-cotes);
         height: $lhauteur-etape-liste;
         background-color: darken($couleur-tres-claire, 3.5%); //#f6f6f6
         box-shadow: 0 3px 10px #0002;

@@ -11,9 +11,12 @@
 
 @import "layouts/manuel";
 
-@import "pages/accueil/lieu";
+@import "pages/accueil";
 
 // tmp
 img{
     height: 30px;
+}
+.restaurants{
+    background-color: lightblue;
 }
