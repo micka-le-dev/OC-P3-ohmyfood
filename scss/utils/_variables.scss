@@ -10,13 +10,17 @@ $couleur-tres-claire: #fff;
 
 $couleur-dernere-etape-liste:#f5edff;
 
+// #f6f6f6
+
 /* polices */
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
 
 /* dimmesions */
+$padding-cotes: 20px;
+
 $largeur-etape-liste: 323px;
-$lhauteur-etape-liste: 73px;
+$hauteur-etape-liste: 73px;
 $gap-liste: 25px;
 $largeur-numero-liste: 25px;
 
@@ -24,4 +28,9 @@ $largeur-numero-liste: 25px;
 :root{
     --largeur-btn: 218px;
     --hauteur-btn: 50px;
+
+    --padding-accueil__titre: 30px;
+    --gap-accueil__restaurants: 18px;
+
+    --radius-carte: 13px;
 }

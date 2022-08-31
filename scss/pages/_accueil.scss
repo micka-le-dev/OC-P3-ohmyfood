@@ -1,0 +1,8 @@
+.page-accueil{
+    &__titre{
+        padding-bottom: var(--padding-accueil__titre);
+    }
+}
+
+@import "accueil/lieu";
+@import "accueil/restaurants";
