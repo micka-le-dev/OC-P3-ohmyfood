@@ -10,6 +10,8 @@ $couleur-tres-claire: #fff;
 
 $couleur-dernere-etape-liste:#f5edff;
 
+// #f6f6f6
+
 /* polices */
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
@@ -26,4 +28,7 @@ $largeur-numero-liste: 25px;
 :root{
     --largeur-btn: 218px;
     --hauteur-btn: 50px;
+
+    --padding-accueil__titre: 30px;
+    --gap-accueil__restaurants: 18px;
 }
