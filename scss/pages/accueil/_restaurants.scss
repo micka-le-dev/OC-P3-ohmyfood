@@ -7,6 +7,7 @@
     gap: var(--gap-accueil__restaurants);
 
     &__titre{
+        width: 100%;
         padding-bottom: calc(var(--padding-accueil__titre) - var(--gap-accueil__restaurants));
     }
 }
