@@ -1,6 +1,6 @@
 .btn-j-aime{
-    width: 25px;
-    height: 25px;
+    width: $taille-btn-j-aime + 5px;
+    height: $taille-btn-j-aime + 5px;
 
     display: flex;
     justify-content: center;
@@ -9,12 +9,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     background-color: transparent;
-    //background-color: lightblue;/*tmp pour le dev */
 
     color: transparent;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1px $couleur-tres-sombre;
 
-    font-size: 20px;
+    font-size: $taille-btn-j-aime;
 
     &:hover{
         -webkit-text-stroke-color: transparent;

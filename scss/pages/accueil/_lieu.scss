@@ -2,7 +2,7 @@
     &__position{
         width: 100%;
         height: 50px;
-        background-color: #eaeaea;
+        background-color: darken($couleur-tres-claire, 8.24%);
         box-shadow: inset 0 2px 6px -3px #0009;
 
         display: flex;
@@ -24,7 +24,7 @@
 
         padding: 40px;
 
-        background-color: #f6f6f6;
+        background-color: darken($couleur-tres-claire, 3.5%);
         text-align: center;
     }
 }
