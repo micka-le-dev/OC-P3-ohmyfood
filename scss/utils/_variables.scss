@@ -14,6 +14,12 @@ $couleur-dernere-etape-liste:#f5edff;
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
 
+
+/* break point */
+$breakpoint: 500px;
+
+
+
 /* dimmesions */
 $padding-cotes: 20px;
 
@@ -27,11 +33,13 @@ $hauteur-btn: 50px;
 $taille-btn-j-aime: 20px;
 
 $padding-accueil__titre: 30px;
-$gap-accueil__restaurants: 18px;
+$gap-accueil__restaurants: clamp(18px, 4.8vw, 72px);
 
 $radius-carte: 13px;
+$max-width-carte-accueil: $breakpoint - 2*$padding-cotes;
 
 :root{
     /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */
     --largeur-accueil__carte: 100%;
+    --padding-page-accueil: 20px; //$padding-cotes;
 }

@@ -1,14 +1,17 @@
 .restaurants{
     background-color: darken($couleur-tres-claire, 3.5%);
-    padding: 58px $padding-cotes 64px;
+    padding: 58px var(--padding-page-accueil) 64px;
 
     &__liste{
-        display: flex;
-        flex-direction: column;
-        gap: $gap-accueil__restaurants;
+        // max-width: 1500px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: $gap-accueil__restaurants;
+        justify-content: center;
 
-        @media (min-width:1000px){
-            --largeur-accueil__carte: 25%;
+        @media (min-width: $breakpoint){
+            --padding-page-accueil:clamp(20px,3.3vw, 50px);
+            grid-template-columns: repeat(auto-fit, $max-width-carte-accueil);
         }
     }
 }

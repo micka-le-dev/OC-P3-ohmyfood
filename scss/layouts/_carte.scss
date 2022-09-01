@@ -1,5 +1,5 @@
 .carte{
-    width: var(--largeur-accueil__carte);
+    // width: var(--largeur-accueil__carte);
     aspect-ratio: 335 / 251;
 
     display: flex;
@@ -8,6 +8,7 @@
 
     border-radius: $radius-carte;
     overflow: hidden;
+    box-shadow: -3px 8px 8px -3px #0003;
 
     position: relative;
     &__etiquette{
