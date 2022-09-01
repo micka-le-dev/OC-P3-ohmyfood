@@ -1,9 +1,9 @@
 
 .btn-principal{
-    width: var(--largeur-btn);
-    height: var(--hauteur-btn);
-    margin: 0 calc(50% - var(--largeur-btn)/2); /* pour centrer */
-    border-radius: var(--hauteur-btn);
+    width: $largeur-btn;
+    height: $hauteur-btn;
+    margin: 0 calc(50% - $largeur-btn/2); /* pour centrer */
+    border-radius: $hauteur-btn;
     
     text-align: center;
     vertical-align: middle;

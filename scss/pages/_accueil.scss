@@ -1,6 +1,6 @@
 .page-accueil{
     &__titre{
-        padding-bottom: var(--padding-accueil__titre);
+        padding-bottom: $padding-accueil__titre;
     }
 }
 
