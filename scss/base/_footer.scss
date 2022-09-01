@@ -32,4 +32,28 @@
     &__icone-partenaire + &__option{
         margin-left: 10px;
     }
+    @media (min-width:$breakpoint){
+        max-width: $breakpoint;
+        margin: 0 auto;
+        position: relative;
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            width: calc(50vw - 50% + 5px);
+            height: 100%;
+            top: 0;
+            background-color: inherit;
+        }
+        &::before{
+            left: 0;
+            transform: translateX(calc(-100% + 2px));
+            // background-color: lightcoral;
+        }
+        &::after{
+            right: 0;
+            transform: translateX(calc(100% - 2px));
+            // background-color: lightblue;
+        }
+    }
 }

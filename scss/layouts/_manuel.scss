@@ -1,10 +1,9 @@
 
 .manuel{
     padding: 50px $padding-cotes 68px;
+    max-width: 600px;
+    margin: 0 auto;
 
-    &__titre{
-        width: 90%;
-    }
 
     & > ol{
         display: flex;
