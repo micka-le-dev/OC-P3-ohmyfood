@@ -40,19 +40,19 @@
             content: "";
             position: absolute;
             display: block;
-            width: calc(50vw - 50%);
+            width: calc(50vw - 50% + 5px);
             height: 100%;
             top: 0;
             background-color: inherit;
         }
         &::before{
             left: 0;
-            transform: translateX(-100%);
-            // background-color: lightblue;
+            transform: translateX(calc(-100% + 2px));
+            // background-color: lightcoral;
         }
         &::after{
             right: 0;
-            transform: translateX(100%);
+            transform: translateX(calc(100% - 2px));
             // background-color: lightblue;
         }
     }
