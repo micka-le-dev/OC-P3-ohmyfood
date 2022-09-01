@@ -16,15 +16,17 @@
     }
 
     &__conseil-et-explorer{
-        height: 287px;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
         padding: 40px;
+        padding-bottom: 57px;
 
         background-color: darken($couleur-tres-claire, 3.5%);
         text-align: center;
+    }
+    &__conseil{
+        padding-bottom: 35px;
+        &--titre{
+            padding-bottom: 20px;
+        }
     }
 }
