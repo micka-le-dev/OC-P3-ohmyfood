@@ -1,18 +1,19 @@
 .carte{
+    width: var(--largeur-accueil__carte);
     aspect-ratio: 335 / 251;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    border-radius: var(--radius-carte);
+    border-radius: $radius-carte;
     overflow: hidden;
 
     position: relative;
     &__etiquette{
         position: absolute;
-        right: var(--radius-carte);
-        top: var(--radius-carte);
+        right: $radius-carte;
+        top: $radius-carte;
         
         background-color: $couleur-tertiaire;
         color: #008766;
@@ -47,7 +48,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            right: 10%;
+            right: 7.46%;
         }
     }
 }
