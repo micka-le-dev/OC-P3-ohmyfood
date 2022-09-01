@@ -1,6 +1,7 @@
 .page-accueil{
     &__titre{
         padding-bottom: $padding-accueil__titre;
+        
         @media (min-width:$breakpoint){
             text-align: center;
             font-size: 200%;

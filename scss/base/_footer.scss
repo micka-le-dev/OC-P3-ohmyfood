@@ -35,14 +35,18 @@
     @media (min-width:$breakpoint){
         max-width: $breakpoint;
         margin: 0 auto;
+        
         position: relative;
+
         &::before, &::after{
             content: "";
             position: absolute;
+            top: 0;
+        
             display: block;
             width: calc(50vw - 50% + 5px);
             height: 100%;
-            top: 0;
+        
             background-color: inherit;
         }
         &::before{

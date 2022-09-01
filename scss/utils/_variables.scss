@@ -40,6 +40,5 @@ $max-width-carte-accueil: $breakpoint - 2*$padding-cotes;
 
 :root{
     /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */
-    --largeur-accueil__carte: 100%;
     --padding-page-accueil: 20px; //$padding-cotes;
 }
