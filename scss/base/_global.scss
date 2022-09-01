@@ -2,9 +2,4 @@ body{
     background-color: $couleur-tres-claire;
     color: $couleur-tres-sombre;
     font-family: $police-texte;
-    
-    /* bandes latéral du footer dépasse */
-    width: 100vw;
-    height: auto;
-    overflow: hidden;
 }
