@@ -1,9 +1,11 @@
 
-@function taille-responsive($t-min, $t-max, $ecran-min, $ecran-max){
+@use "sass:math";
 
-    
-    $beta: ( ($ecran-min * $t-max) - ($ecran-max * $t-min) ) / ($ecran-min + $ecran-max); // en px
-    $alpha: 100vw * ($t-max - $beta ) / $ecran-max; // en vw
+
+@function taille-responsive($t-min, $t-max, $ecran-min, $ecran-max){// en px
+
+    $beta: math.div( ($ecran-min * $t-max) - ($ecran-max * $t-min) , $ecran-min + $ecran-max ); // en px
+    $alpha: math.div( 100vw * ($t-max - $beta ) , $ecran-max ); // en vw
 
     @return clamp($t-min, calc($alpha + $beta), $t-max);
 }
