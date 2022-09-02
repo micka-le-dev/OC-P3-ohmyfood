@@ -1,8 +1,4 @@
 
 @mixin texte-responsive($fs-min, $fs-max, $ecran-min, $ecran-max){
-    
-    $beta: ( $ecran-min * $fs-max + $ecran-max * $fs-min ) / ($ecran-min + $ecran-max); // en px
-    $alpha: 100 * ($fs-max - $beta ) / $ecran-max;// attention l'unité doit être en vw
-
-    font-size: clamp($fs-min, calc($alpha vw + $beta), $fs-max);
+    font-size: taille-responsive($fs-min, $fs-max, $ecran-min, $ecran-max);
 }

@@ -1,0 +1,13 @@
+
+@function taille-responsive($t-min, $t-max, $ecran-min, $ecran-max){
+
+    
+    $beta: ( ($ecran-min * $t-max) - ($ecran-max * $t-min) ) / ($ecran-min + $ecran-max); // en px
+    $alpha: 100vw * ($t-max - $beta ) / $ecran-max; // en vw
+
+    @return clamp($t-min, calc($alpha + $beta), $t-max);
+}
+
+@function taille-responsive-ref($t-ref, $ecran-ref, $ecran-min, $ecran-max){
+    @return taille-responsive($ecran-min * $t-ref / $ecran-ref, $ecran-max * $t-ref / $ecran-ref, $ecran-min, $ecran-max);
+}
