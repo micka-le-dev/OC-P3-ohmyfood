@@ -41,6 +41,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        row-gap: taille-responsive-ref(11px, $repere-ecran-ref, $repere-ecran-min, $repere-ercan-max);
+
         @include texte-responsive(10.027px, 16.4757px, $repere-ecran-min, $repere-ercan-max);
 
         position: relative;
