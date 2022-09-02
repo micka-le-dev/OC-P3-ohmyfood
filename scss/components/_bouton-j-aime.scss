@@ -18,8 +18,8 @@
     background-image: linear-gradient(to bottom, transparent 50%,  $couleur-secondaire 1%, $couleur-secondaire, $couleur-primaire);
     background-size: 1% 200%;
 
-    transition: background-position ease-out 0.8s,
-                -webkit-text-stroke-color ease-in-out 0.8s;
+    transition: background-position ease-out 0.4s,
+                -webkit-text-stroke-color ease-in-out 0.4s;
     
 
     &:hover{
