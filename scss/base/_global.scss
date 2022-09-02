@@ -2,4 +2,9 @@ body{
     background-color: $couleur-tres-claire;
     color: $couleur-tres-sombre;
     font-family: $police-texte;
+
+    
+    @media (min-width: $breakpoint){
+        font-size: 200%;
+    }
 }
