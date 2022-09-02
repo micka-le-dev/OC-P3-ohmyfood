@@ -1,6 +1,6 @@
 .btn-j-aime{
-    width: $taille-btn-j-aime + 5px;
-    height: $taille-btn-j-aime + 5px;
+    width: calc($fs-btn-j-aime + 5px);
+    height: calc($fs-btn-j-aime + 5px);
 
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     color: transparent;
     -webkit-text-stroke: 1px $couleur-tres-sombre;
 
-    font-size: $taille-btn-j-aime;
+    font-size: $fs-btn-j-aime;
 
     &:hover{
         -webkit-text-stroke-color: transparent;
