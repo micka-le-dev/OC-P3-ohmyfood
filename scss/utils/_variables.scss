@@ -17,7 +17,9 @@ $police-texte: 'Roboto', sans-serif;
 
 /* break point */
 $breakpoint: 500px;
-
+$repere-ecran-min: 320px;
+$repere-ecran-ref: 375px;
+$repere-ercan-max: $breakpoint;
 
 
 /* dimmesions */
@@ -37,6 +39,8 @@ $gap-accueil__restaurants: clamp(18px, 4.8vw, 72px);
 
 $radius-carte: 13px;
 $max-width-carte-accueil: $breakpoint - 2*$padding-cotes;
+$padding-cote-description-restaurant: 7.46%;
+
 
 :root{
     /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */

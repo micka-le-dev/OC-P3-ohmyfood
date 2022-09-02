@@ -1,0 +1,4 @@
+
+@mixin texte-responsive($fs-min, $fs-max, $ecran-min, $ecran-max){
+    font-size: taille-responsive($fs-min, $fs-max, $ecran-min, $ecran-max);
+}

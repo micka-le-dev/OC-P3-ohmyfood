@@ -33,22 +33,31 @@
 
 
     &__description-restaurant{
-        height: 77px;
+        height: 30.677%;
         flex-shrink: 0;
         background-color: $couleur-tres-claire;
 
-        padding: 20px 14px;
+        padding: 20px $padding-cote-description-restaurant;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        font-size: 13px;
+        justify-content: center;
+        row-gap: taille-responsive-ref(7px, $repere-ecran-ref, $repere-ecran-min, $repere-ercan-max);
+
+        @include texte-responsive(10.027px, 16.4757px, $repere-ecran-min, $repere-ercan-max);
 
         position: relative;
         & > .btn-j-aime{
+            // width: calc(var(--fs-btn-j-aime) + 5px);
+            // height: calc(var(--fs-btn-j-aime) + 5px);
+
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 7.46%;
+            top: 29.87%;
+            right: $padding-cote-description-restaurant;
+            // font-size: var($fs-var);
+
         }
+    }
+    &__nom-restaurant{
+        @include texte-responsive(10.86px, 17.849px, $repere-ecran-min, $repere-ercan-max);
     }
 }
