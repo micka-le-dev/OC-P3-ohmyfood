@@ -12,7 +12,7 @@ La mission est de faire l'intégration versionnée des maquettes faite par une a
 
 ## Pour commencer
 
-Prendre conaissance des documents dans [/mission/]
+Prendre conaissance des documents dans le dossier [mission](/mission/)
 
 
 ### Pré-requis
@@ -35,9 +35,9 @@ Logiciels utilisés :
 * [brave](https://brave.com/fr/) - Navigateur sécurisé dérivé de chrome
 
 Extensions utilisées:
-*[git graph] - pour visualiser les branches git du projet
-*[live server] - combiné avec auto-save, permet de voir instantanement l'effet des modifications du code
-*[live sass compiler] - combiné avec auto-save, permet du compiler sass dés qu'on midifi le code, se combine avec [live server]
+* git graph - pour visualiser les branches git du projet
+* live server - combiné avec auto-save, permet de voir instantanement l'effet des modifications du code
+* live sass compiler - combiné avec auto-save, permet du compiler sass dés qu'on midifi le code, se combine avec live server
 
 
 ## Version
