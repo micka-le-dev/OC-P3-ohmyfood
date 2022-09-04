@@ -1,4 +1,5 @@
 .btn-j-aime{
+    //$fs-btn-j-aime: 50px;
     width: calc($fs-btn-j-aime + 5px);
     height: calc($fs-btn-j-aime + 5px);
 
@@ -6,17 +7,26 @@
     justify-content: center;
     align-items: center;
     
+    font-size: $fs-btn-j-aime;
+    
+    -webkit-text-stroke: 1px $couleur-tres-sombre;
+    color: transparent;
+    
     background-clip: text;
     -webkit-background-clip: text;
-    background-color: transparent;
 
-    color: transparent;
-    -webkit-text-stroke: 1px $couleur-tres-sombre;
+    /* le 50 premiers % du Background devrait être transparent, mais ça beugue (le fond devrait être #fff mais il est #f0f0f0).
+    pour contourner ça transparent deviens couleur du fond de carte__description */
+    background-image: linear-gradient(to bottom, $couleur-tres-claire 50%,  $couleur-secondaire 1%, $couleur-secondaire, $couleur-primaire);
+    background-size: 1% 200%;
 
-    font-size: $fs-btn-j-aime;
+    transition: background-position ease-out 0.4s,
+                -webkit-text-stroke-color ease-in-out 0.4s;
+    
 
-    &:hover{
+    &:hover,
+    &:active{
         -webkit-text-stroke-color: transparent;
-        background-image: linear-gradient(to top, $couleur-secondaire, $couleur-primaire);
+        background-position: 0 100%;
     }
 }
