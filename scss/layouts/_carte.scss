@@ -29,7 +29,13 @@
     &__image-restaurant{
         width: 100%;
         object-fit: cover;
+
+        &--la-palette-du-gout{      transform: translateY(-21%) scale(1.03);        }
+        &--la-note-enchantee{       transform: translateY(-36%);                    }
+        &--a-la-francaise{          transform: translate(1%, -24%) scale(1.04);     }
+        &--le-delice-des-sens{      transform: translateY(-25%);                    }
     }
+
 
 
     &__description-restaurant{
