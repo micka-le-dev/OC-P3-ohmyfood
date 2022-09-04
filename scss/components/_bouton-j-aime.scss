@@ -15,14 +15,17 @@
     background-clip: text;
     -webkit-background-clip: text;
 
-    background-image: linear-gradient(to bottom, transparent 50%,  $couleur-secondaire 1%, $couleur-secondaire, $couleur-primaire);
+    /* le 50 premiers % du Background devrait être transparent, mais ça beugue (le fond devrait être #fff mais il est #f0f0f0).
+    pour contourner ça transparent deviens couleur du fond de carte__description */
+    background-image: linear-gradient(to bottom, $couleur-tres-claire 50%,  $couleur-secondaire 1%, $couleur-secondaire, $couleur-primaire);
     background-size: 1% 200%;
 
     transition: background-position ease-out 0.4s,
                 -webkit-text-stroke-color ease-in-out 0.4s;
     
 
-    &:hover{
+    &:hover,
+    &:active{
         -webkit-text-stroke-color: transparent;
         background-position: 0 100%;
     }
