@@ -1,0 +1,26 @@
+
+.header{
+    position: relative;
+    height: $hauteur-header;
+
+    &__lien-retour{
+        display: block;
+        width: 25px;
+        position: absolute;
+        top: 50%;
+        left: 1.25em;
+
+        transform: translateY(-50%);
+
+        font-size: 1.25em;
+    }
+
+    &__logo-titre{
+        text-align: center;
+        padding: 10px 0;
+        font-family: $police-titre;
+    }
+    @media (min-width: $breakpoint){
+        height: calc($hauteur-header * 1.25);
+    }
+}

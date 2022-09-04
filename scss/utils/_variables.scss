@@ -1,0 +1,51 @@
+
+/* couleurs du site */
+$couleur-primaire: #9356DC;
+$couleur-secondaire: #FF79DA;
+$couleur-tertiaire: #99E2D0;
+
+$couleur-tres-sombre: #000;
+$couleur-sombre: #353535;
+$couleur-tres-claire: #fff;
+
+$couleur-dernere-etape-liste:#f5edff;
+
+/* polices */
+$police-titre: 'Shrikhand', cursive;
+$police-texte: 'Roboto', sans-serif;
+
+
+/* break point */
+$breakpoint: 500px;
+$repere-ecran-min: 320px;
+$repere-ecran-ref: 375px;
+$repere-ercan-max: $breakpoint;
+
+
+/* dimmesions */
+$hauteur-header: 64px;
+$hauteur-position: 50px;
+
+$padding-cotes: 20px;
+
+$largeur-etape-liste: 323px;
+$hauteur-etape-liste: 73px;
+$gap-liste: 25px;
+$largeur-numero-liste: 25px;
+
+$largeur-btn: 218px;
+$hauteur-btn: 50px;
+$taille-btn-j-aime: 20px;
+
+$padding-accueil__titre: 30px;
+$gap-accueil__restaurants: clamp(18px, 4.8vw, 72px);
+
+$radius-carte: 13px;
+$max-width-carte-accueil: $breakpoint - 2*$padding-cotes;
+$padding-cote-description-restaurant: 7.46%;
+
+
+:root{
+    /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */
+    --padding-page-accueil: 20px; //$padding-cotes;
+}

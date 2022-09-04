@@ -1,0 +1,69 @@
+.carte{
+    aspect-ratio: 335 / 251;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: $radius-carte;
+    overflow: hidden;
+    box-shadow: -3px 8px 8px -3px #0003;
+
+    position: relative;
+    &__etiquette{
+        position: absolute;
+        right: $radius-carte;
+        top: $radius-carte;
+        
+        background-color: $couleur-tertiaire;
+        color: #008766;
+
+        padding: 10px 13px;
+        border-radius: 2px;
+    }
+
+    &__contenaire-image-restaurant{
+        width: 100%;
+        overflow: hidden;
+    }
+    &__image-restaurant{
+        width: 100%;
+        object-fit: cover;
+
+        &--la-palette-du-gout{      transform: translateY(-21%) scale(1.03);        }
+        &--la-note-enchantee{       transform: translateY(-36%);                    }
+        &--a-la-francaise{          transform: translate(1%, -24%) scale(1.04);     }
+        &--le-delice-des-sens{      transform: translateY(-25%);                    }
+    }
+
+
+
+    &__description-restaurant{
+        height: 30.677%;
+        flex-shrink: 0;
+        background-color: $couleur-tres-claire;
+
+        padding: 20px $padding-cote-description-restaurant;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: taille-responsive-ref(7px, $repere-ecran-ref, $repere-ecran-min, $repere-ercan-max);
+
+        @include texte-responsive(10.027px, 16.4757px, $repere-ecran-min, $repere-ercan-max);
+
+        position: relative;
+        & > .btn-j-aime{
+            // width: calc(var(--fs-btn-j-aime) + 5px);
+            // height: calc(var(--fs-btn-j-aime) + 5px);
+
+            position: absolute;
+            top: 29.87%;
+            right: $padding-cote-description-restaurant;
+            // font-size: var($fs-var);
+
+        }
+    }
+    &__nom-restaurant{
+        @include texte-responsive(10.86px, 17.849px, $repere-ecran-min, $repere-ercan-max);
+    }
+}

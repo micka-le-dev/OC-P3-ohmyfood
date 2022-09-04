@@ -1,0 +1,37 @@
+
+.btn-principal{
+    width: $largeur-btn;
+    height: $hauteur-btn;
+    margin: 0 calc(50% - $largeur-btn/2); /* pour centrer */
+    border-radius: $hauteur-btn;
+    
+    text-align: center;
+    vertical-align: middle;
+    color: $couleur-tres-claire;
+    font-weight: 600;
+    font-size: 15px;
+
+
+
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, $couleur-secondaire, $couleur-primaire);
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to bottom, lighten($couleur-secondaire,10%), lighten($couleur-primaire,10%));
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 300ms ease-in-out;
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+}
