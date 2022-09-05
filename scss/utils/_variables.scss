@@ -47,6 +47,9 @@ $max-width-carte-accueil: $breakpoint - 2*$padding-cotes;
 $padding-cote-description-restaurant: 7.46%;
 
 
+$hauteur-proposition-plat: 69px;
+$padding-proposition-plat: 3.15%;//11px;
+
 :root{
     /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */
     --padding-page-accueil: 20px; //$padding-cotes;
