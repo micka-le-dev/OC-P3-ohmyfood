@@ -16,4 +16,10 @@
             margin-top: 9px;
         }
     }
+
+    &__propositions{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
