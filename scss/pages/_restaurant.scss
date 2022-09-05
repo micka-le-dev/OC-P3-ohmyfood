@@ -1,0 +1,19 @@
+.page-restaurant{
+    & > main{
+        position: relative;
+        padding-top: 220px;
+    }
+    &__contenaire-image{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        height: 257px;
+        overflow: hidden;
+    }
+    &__menu{
+        background-color: $couleur-restaurant;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+    }
+}
