@@ -40,15 +40,23 @@
     &__titre-restaurant{
         padding: 0 2px 40px;
         position: relative;
+
     }
     &__nom-restaurant{
         display: inline-block;
         font-size: 32px;
         font-family: $police-titre;
+        
+        @media (min-width: $breakpoint){
+            font-size: 200%;
+        }
     }
     &__btn-j-aime{
         position: absolute;
         right: 26px;
-        top: 5px;
+        top: 10px;
+    }
+    @media (min-width: $breakpoint){
+        top: 20px;
     }
 }
