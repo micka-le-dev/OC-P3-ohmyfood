@@ -24,7 +24,7 @@
         width: 100%;
         object-fit: cover;
         &--la-note-enchantee{
-            transform: translateY(-20%);
+            transform: translateY(-21%);
         }
     }
     &__menu{
@@ -32,5 +32,23 @@
         border-top-left-radius: 32px;
         border-top-right-radius: 32px;
 
+    }
+}
+
+.menu{
+    padding: 40px 14px 72px;
+    &__titre-restaurant{
+        padding: 0 2px 40px;
+        position: relative;
+    }
+    &__nom-restaurant{
+        display: inline-block;
+        font-size: 32px;
+        font-family: $police-titre;
+    }
+    &__btn-j-aime{
+        position: absolute;
+        right: 26px;
+        top: 5px;
     }
 }
