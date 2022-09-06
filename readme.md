@@ -56,7 +56,7 @@ version 0.0.1
 demander son autoriastion et quelles infos mettre
 
 
-## Méthode de tranvail avec git
+## Méthode de travail avec git
 
 Ce projet utilise la méthode **git flow**.
 
