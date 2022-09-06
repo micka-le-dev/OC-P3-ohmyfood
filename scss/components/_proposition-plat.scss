@@ -69,7 +69,7 @@
                 & .proposition-plat__icone-check{
                     transform: translate(-50%,-50%) rotate(0);
                 }
-                & .proposition-plat__label--annule{
+                & + .proposition-plat__label--annule{
                     z-index: 10;
                 }
             }
