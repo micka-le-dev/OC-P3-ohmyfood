@@ -7,6 +7,8 @@
         background-color: $couleur-tres-claire;
         border-radius: 10px;
         overflow: hidden;
+
+        font-size: $fs-proposition-plat;
     }
     &__texte{
         flex-shrink: 1;
@@ -16,14 +18,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: $padding-proposition-plat;
+        padding: $padding-proposition-plat-texte;
+
     }
     &__nom-proposition{
-        font-size: 110%;
+        font-size: 118%;
         font-weight: bold;
     }
     &__nom-proposition,
     &__description-proposition{
+        flex-shrink: 0;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -31,15 +35,15 @@
     
     &__prix{
         flex-shrink: 0;
-        aspect-ratio: 1 / 1;
         height: 100%;
-        padding: $padding-proposition-plat;
+        padding: $padding-proposition-plat-prix;
 
         display: flex;
         justify-content: center;
         align-items: flex-end;
 
         font-weight: bold;
+        font-size: 109%;
     }
 
     &__radio{

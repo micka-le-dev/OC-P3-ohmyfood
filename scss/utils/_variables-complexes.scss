@@ -1,2 +1,7 @@
 
 $fs-btn-j-aime: taille-responsive(17.55px, 28.83px, $repere-ecran-min, $repere-ercan-max);
+
+$fs-proposition-plat: taille-responsive(13px, 16px, $repere-ecran-min,$repere-ercan-max);
+$padding-cote-proposition-plat: taille-responsive(13px, 20px, $repere-ecran-min,$repere-ercan-max);
+
+$padding-proposition-plat-prix: $padding-proposition-plat-vertical $padding-cote-proposition-plat;
