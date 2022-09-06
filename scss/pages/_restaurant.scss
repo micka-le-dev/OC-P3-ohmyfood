@@ -39,11 +39,12 @@
     padding: 40px 14px 72px;
     &__titre-restaurant{
         padding: 0 2px;
-        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
     }
     &__nom-restaurant{
-        display: inline-block;
         font-size: 32px;
         font-family: $police-titre;
         
@@ -52,9 +53,8 @@
         }
     }
     &__btn-j-aime{
-        position: absolute;
-        right: 26px;
-        top: 10px;
+        margin-right: 26px;
+        margin-left: 16px;
     }
     &__btn-commander{
         margin-top: 50px;
