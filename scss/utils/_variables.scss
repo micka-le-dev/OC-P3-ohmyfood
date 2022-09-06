@@ -51,6 +51,10 @@ $hauteur-proposition-plat: 68px;
 $padding-proposition-plat-vertical: 13px;
 $padding-proposition-plat-texte: $padding-proposition-plat-vertical 0 $padding-proposition-plat-vertical 11px;
 
+
+/* animations */
+$delta-delay-apparition: 0.2s;
+
 :root{
     /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */
     --padding-page-accueil: 20px; //$padding-cotes;
