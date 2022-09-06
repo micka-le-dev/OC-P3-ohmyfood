@@ -1,0 +1,44 @@
+.page-restaurant{
+    & > main{
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 100%;
+            aspect-ratio: 375 / 220;
+        }
+    }
+    &__contenaire-image{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        width: 100%;
+        aspect-ratio: 375 / 257;
+        overflow: hidden;
+    }
+    &__image{
+        width: 100%;
+        object-fit: cover;
+        &--la-note-enchantee{
+            transform: translateY(-21%);
+        }
+    }
+    &__menu{
+        background-color: $couleur-restaurant;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+
+    }
+}
+
+.menu{
+    padding: 40px 14px 72px;
+    
+    &__btn-commander{
+        margin-top: 50px;
+    }
+}

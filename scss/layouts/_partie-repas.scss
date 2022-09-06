@@ -1,0 +1,25 @@
+.partie-repas{
+    padding-top: 46px;
+
+    &__nom{
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-left: 7px;
+        margin-bottom: 15px;
+        
+        &::after{
+            content: "";
+            display: block;
+            height: 3px;
+            width: 10%; //ref 40px
+            background-color: $couleur-tertiaire;
+            margin-top: 9px;
+        }
+    }
+
+    &__propositions{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

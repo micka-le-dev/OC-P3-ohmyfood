@@ -10,6 +10,8 @@ $couleur-tres-claire: #fff;
 
 $couleur-dernere-etape-liste:#f5edff;
 
+$couleur-restaurant: darken($couleur-tres-claire, 3.5%); /* #f6f6f6 */
+
 /* polices */
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
@@ -44,6 +46,10 @@ $radius-carte: 13px;
 $max-width-carte-accueil: $breakpoint - 2*$padding-cotes;
 $padding-cote-description-restaurant: 7.46%;
 
+
+$hauteur-proposition-plat: 68px;
+$padding-proposition-plat-vertical: 13px;
+$padding-proposition-plat-texte: $padding-proposition-plat-vertical 0 $padding-proposition-plat-vertical 11px;
 
 :root{
     /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */

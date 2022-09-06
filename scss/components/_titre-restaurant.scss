@@ -1,0 +1,20 @@
+
+.titre-restaurant{
+    padding: 0 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__nom-restaurant{
+        font-size: 32px;
+        font-family: $police-titre;
+        
+        @media (min-width: $breakpoint){
+            font-size: 200%;
+        }
+    }
+    &__btn-j-aime{
+        margin-right: 26px;
+        margin-left: 16px;
+    }
+}

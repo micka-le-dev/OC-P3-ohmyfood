@@ -1,5 +1,5 @@
 .restaurants{
-    background-color: darken($couleur-tres-claire, 3.5%);
+    background-color: $couleur-restaurant;
     padding: 58px var(--padding-page-accueil) 64px;
 
     &__liste{
