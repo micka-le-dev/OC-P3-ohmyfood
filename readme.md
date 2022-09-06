@@ -43,7 +43,7 @@ Extensions [VS code](https://code.visualstudio.com/) utilisées:
 
 ## Version
 
-version 0.0.1
+version 0.0.2
 
 
 ## Auteurs
@@ -65,6 +65,6 @@ Voici quelques sources pour en savoir plus :
 * [app **git flow**](https://danielkummer.github.io/git-flow-cheatsheet/index.fr_FR.html) - application pour simplifier l'utilisation de la méthode **git flow**
 
 
-### **git flow** en image
+### git flow en image
 
 ![illustration de **git flow**](gitflow.png)
