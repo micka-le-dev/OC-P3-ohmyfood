@@ -17,6 +17,7 @@ Prendre conaissance des documents dans le dossier [mission](/mission/)
 
 ### Pré-requis
 
+- html / css
 - sass
 - git
 
@@ -34,7 +35,7 @@ Logiciels utilisés :
 * [VS code](https://code.visualstudio.com/) - Editeur de textes avancé
 * [brave](https://brave.com/fr/) - Navigateur sécurisé dérivé de chrome
 
-Extensions utilisées:
+Extensions [VS code](https://code.visualstudio.com/) utilisées:
 * git graph - pour visualiser les branches git du projet
 * live server - combiné avec auto-save, permet de voir instantanement l'effet des modifications du code
 * live sass compiler - combiné avec auto-save, permet du compiler sass dés qu'on midifi le code, se combine avec live server
@@ -42,12 +43,28 @@ Extensions utilisées:
 
 ## Version
 
-version 0.0.1
+version 0.0.2
+
 
 ## Auteurs
 
 * **Mickaël Petithory** _alias_ [micka-le-dev](https://github.com/micka-le-dev)
 
+
 ## Superviseurs/mentor ?
 
 demander son autoriastion et quelles infos mettre
+
+
+## Méthode de travail avec git
+
+Ce projet utilise la méthode **git flow**.
+
+Voici quelques sources pour en savoir plus :
+* [tuto de grafikart](https://grafikart.fr/tutoriels/git-flow-742) - tuto vidéo pour découvrir **git flow**
+* [app **git flow**](https://danielkummer.github.io/git-flow-cheatsheet/index.fr_FR.html) - application pour simplifier l'utilisation de la méthode **git flow**
+
+
+### git flow en image
+
+![illustration de **git flow**](gitflow.png)

@@ -17,7 +17,7 @@
 
     /* le 50 premiers % du Background devrait être transparent, mais ça beugue (le fond devrait être #fff mais il est #f0f0f0).
     pour contourner ça transparent deviens couleur du fond de carte__description */
-    background-image: linear-gradient(to bottom, $couleur-tres-claire 50%,  $couleur-secondaire 1%, $couleur-secondaire, $couleur-primaire);
+    background-image: linear-gradient(to bottom, transparent 50%,  $couleur-secondaire 1%, $couleur-secondaire, $couleur-primaire);
     background-size: 1% 200%;
 
     transition: background-position ease-out 0.4s,

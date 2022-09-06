@@ -1,0 +1,95 @@
+.proposition-plat{
+    height: $hauteur-proposition-plat;
+    &__label{
+        height: 100%;
+        display: flex;
+
+        background-color: $couleur-tres-claire;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 13px -5px #0004;
+
+        font-size: $fs-proposition-plat;
+
+    }
+    &__texte{
+        flex-shrink: 1;
+        flex-grow: 1;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: $padding-proposition-plat-texte;
+
+    }
+    &__nom-proposition{
+        font-size: 118%;
+        font-weight: bold;
+    }
+    &__nom-proposition,
+    &__description-proposition{
+        flex-shrink: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    &__prix{
+        flex-shrink: 0;
+        height: 100%;
+        padding: $padding-proposition-plat-prix;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        font-weight: bold;
+        font-size: 109%;
+    }
+
+    &__radio{
+        display: none;
+        &:checked{
+            & + .proposition-plat__label{
+                & .proposition-plat__check{
+                    width: $hauteur-proposition-plat;
+                }
+                & .proposition-plat__icone-check{
+                    transform: translate(-50%,-50%) rotate(0);
+                }
+            }
+        }
+    }
+    &__check{
+        flex-shrink: 0;
+        height: 100%;
+        width: 0;
+        transition: width 0.4s ease-in-out;
+
+        position: relative;
+
+        background-color: $couleur-tertiaire;
+        color: $couleur-tres-claire;
+        font-size: 22px;
+    }
+    &__icone-check{
+        position: absolute;
+        top: 50%;
+        left: calc($hauteur-proposition-plat / 2);
+        transform: translate(-50%,-50%) rotate(-1turn);
+        transition: transform 0.4s ease-in-out;
+    }
+    animation: apparition-menu 400ms backwards;
+}
+
+@keyframes apparition-menu{
+    from{
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
