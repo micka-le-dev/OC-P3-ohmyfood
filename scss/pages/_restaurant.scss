@@ -33,19 +33,4 @@
         border-top-right-radius: 32px;
 
     }
-    &--la-note-enchantee{
-        .menu{
-            &__entrees  .proposition-plat{  @include anim-delay(4, $delta-delay-apparition, 0s);    }
-            &__plats    .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{4 * $delta-delay-apparition}));    }
-            &__desserts .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{(4 + 3) * $delta-delay-apparition}));    }        
-        }
-    }
-}
-
-.menu{
-    padding: 40px 14px 72px;
-    
-    &__btn-commander{
-        margin-top: 50px;
-    }
 }

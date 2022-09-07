@@ -1,5 +1,6 @@
 .proposition-plat{
     height: $hauteur-proposition-plat;
+    position: relative;
     &__label{
         height: 100%;
         display: flex;
@@ -11,6 +12,16 @@
 
         font-size: $fs-proposition-plat;
 
+        z-index: 1;
+        &--annule{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -10;
+            background: transparent;
+        }
     }
     &__texte{
         flex-shrink: 1;
@@ -57,6 +68,9 @@
                 }
                 & .proposition-plat__icone-check{
                     transform: translate(-50%,-50%) rotate(0);
+                }
+                & + .proposition-plat__label--annule{
+                    z-index: 10;
                 }
             }
         }
