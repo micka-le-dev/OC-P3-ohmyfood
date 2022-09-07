@@ -9,5 +9,6 @@
     }
 }
 
-@import "accueil/lieu";
-@import "accueil/restaurants";
+@import "../layouts/accueil/lieu";
+@import "../layouts/accueil/manuel";
+@import "../layouts/accueil/restaurants";
