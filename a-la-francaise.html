@@ -26,11 +26,191 @@
         <a href="index.html" class="header__lien-retour"><i class="fa-solid fa-arrow-left"></i></a>
         <h1 class="header__logo-titre">ohmyfood</h1>
     </header>
-    <main>
 
+
+    <main>
+        <div class="page-restaurant__contenaire-image">
+            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat gastronomique vu du dessus" class="page-restaurant__image page-restaurant__image--la-palette-du-gout">
+        </div>
         
 
+
+        <article class="page-restaurant__menu menu menu--la-palette-du-gout">
+            <div class="titre-restaurant">
+                <h2 class="titre-restaurant__nom-restaurant">La palette du goût</h2>
+                <button class="titre-restaurant__btn-j-aime btn-j-aime"><i class="fa-solid fa-heart carte__incone-coeur"></i></button>
+            </div>
+
+            <form class="menu__form">
+
+                <section class="partie-repas menu__entrees menu__entrees--la-palette-du-gout">
+                    <h3 class="partie-repas__nom">Entrées</h3>
+                    <input type="radio" name="entree" value="rien" id="aucune-entree" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="entree1" id="entree1">
+                            <label class="proposition-plat__label" for="entree1">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">entree1</span>
+                                    <span class="proposition-plat__description-proposition">entree1</span>
+                                </span>
+                                <span class="proposition-plat__prix">entree1</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="entree2" id="entree2">
+                            <label class="proposition-plat__label" for="entree2">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">entree2</span>
+                                    <span class="proposition-plat__description-proposition">entree2</span>
+                                </span>
+                                <span class="proposition-plat__prix">entree2€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="entree3" id="entree3">
+                            <label class="proposition-plat__label" for="entree3">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">entree3</span>
+                                    <span class="proposition-plat__description-proposition">entree3</span>
+                                </span>
+                                <span class="proposition-plat__prix">entree3€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="partie-repas menu__plats menu__plats--la-palette-du-gout">
+                    <h3 class="partie-repas__nom">Plats</h3>
+                    <input type="radio" name="plat" value="rien" id="aucun-plat" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="plat1" id="plat1">
+                            <label for="plat1" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">plat1</span>
+                                    <span class="proposition-plat__description-proposition">plat1</span>
+                                </span>
+                                <span class="proposition-plat__prix">plat1</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="plat2" id="plat2">
+                            <label for="plat2" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">plat2</span>
+                                    <span class="proposition-plat__description-proposition">plat2</span>
+                                </span>
+                                <span class="proposition-plat__prix">plat2</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="plat3" id="plat3">
+                            <label for="plat3" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">plat3</span>
+                                    <span class="proposition-plat__description-proposition">plat3</span>
+                                </span>
+                                <span class="proposition-plat__prix">plat3</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="partie-repas menu__desserts menu__desserts--la-palette-du-gout">
+                    <h3 class="partie-repas__nom">Desserts</h3>
+                    <input type="radio" name="dessert" value="rien" id="aucun-dessert" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="dessert1" value="dessert1">
+                            <label for="dessert1" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">dessert1</span>
+                                    <span class="proposition-plat__description-proposition">dessert1</span>
+                                </span>
+                                <span class="proposition-plat__prix">dessert1</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="dessert2" value="dessert2">
+                            <label for="dessert2" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">dessert2</span>
+                                    <span class="proposition-plat__description-proposition">dessert2</span>
+                                </span>
+                                <span class="proposition-plat__prix">dessert2</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="dessert3" value="dessert3">
+                            <label for="dessert3" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">dessert3</span>
+                                    <span class="proposition-plat__description-proposition">dessert3</span>
+                                </span>
+                                <span class="proposition-plat__prix">dessert3</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <button type="submit" class="menu__btn-commander btn-principal">Commander</button>
+            
+            </form>
+        </article>
+
     </main>
+
+
+
     <footer class="footer">
         <div class="footer__contenaire">
             <h2 class="footer__titre">ohmyfood</h2>

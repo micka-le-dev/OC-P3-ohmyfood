@@ -1,42 +1,51 @@
 ﻿La palette du goût
 
 Entrées
+fricassee-d-escargot
 Fricassée d'escargot
-Au piment d'Espelette 
+Au piment d'Espelette
 25€
 
+foie-gras-de-canard-mi-cuit
 Foie gras de canard mi-cuit
 Et ses copeaux de truffe noire
 35€
 
+oeuf-au-plat
 Oeuf au plat
 Assaisonné à la truffe sur lit de caviar
 20€
 
 
 Plats
+filet-de-boeuf-aux-herbes
 Filet de boeuf aux herbes
 Accompagné de sa ribambelle de légumes
 40€
 
+parmentier-de-queue-de-boeuf
 Parmentier de queue de boeuf
 À la truffe noire sur sa purée de panais
 35€
 
+filet-de-turbot
 Filet de turbot
 Aux agrumes
 44€
         
 Desserts
+paris-brest
 Paris-Brest
 Revisité
 18€
 
-Macaron au chocolat d'exception 
+macaron-au-chocolat-d-exception
+Macaron au chocolat d'exception
 Et glace à la vanille de Madagascar
 22€
 
-Mousse au chocolat 
+mousse-au-chocolat
+Mousse au chocolat
 Au piment d'Espelette et à la truffe noire
 23€  
   
