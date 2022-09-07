@@ -21,16 +21,196 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-restaurant page-restaurant--la-palette-du-gout">
     <header class="header">
         <a href="index.html" class="header__lien-retour"><i class="fa-solid fa-arrow-left"></i></a>
         <h1 class="header__logo-titre">ohmyfood</h1>
     </header>
-    <main>
 
+
+    <main>
+        <div class="page-restaurant__contenaire-image">
+            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat gastronomique sur une belle tablée" class="page-restaurant__image page-restaurant__image--la-palette-du-gout">
+        </div>
         
 
+
+        <article class="page-restaurant__menu menu menu--la-palette-du-gout">
+            <div class="titre-restaurant">
+                <h2 class="titre-restaurant__nom-restaurant">La palette du goût</h2>
+                <button class="titre-restaurant__btn-j-aime btn-j-aime"><i class="fa-solid fa-heart carte__incone-coeur"></i></button>
+            </div>
+
+            <form class="menu__form">
+
+                <section class="partie-repas menu__entrees menu__entrees--la-palette-du-gout">
+                    <h3 class="partie-repas__nom">Entrées</h3>
+                    <input type="radio" name="entree" value="rien" id="aucune-entree" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="fricassee-d-escargot" id="fricassee-d-escargot">
+                            <label class="proposition-plat__label" for="fricassee-d-escargot">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Fricassée d'escargot</span>
+                                    <span class="proposition-plat__description-proposition">Au piment d'Espelette</span>
+                                </span>
+                                <span class="proposition-plat__prix">25€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="foie-gras-de-canard-mi-cuit" id="foie-gras-de-canard-mi-cuit">
+                            <label class="proposition-plat__label" for="foie-gras-de-canard-mi-cuit">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Foie gras de canard mi-cuit</span>
+                                    <span class="proposition-plat__description-proposition">Et ses copeaux de truffe noire</span>
+                                </span>
+                                <span class="proposition-plat__prix">35€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="oeuf-au-plat" id="oeuf-au-plat">
+                            <label class="proposition-plat__label" for="oeuf-au-plat">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Oeuf au plat</span>
+                                    <span class="proposition-plat__description-proposition">Assaisonné à la truffe sur lit de caviar</span>
+                                </span>
+                                <span class="proposition-plat__prix">20€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="partie-repas menu__plats menu__plats--la-palette-du-gout">
+                    <h3 class="partie-repas__nom">Plats</h3>
+                    <input type="radio" name="plat" value="rien" id="aucun-plat" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="filet-de-boeuf-aux-herbes" id="filet-de-boeuf-aux-herbes">
+                            <label for="filet-de-boeuf-aux-herbes" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Filet de boeuf aux herbes</span>
+                                    <span class="proposition-plat__description-proposition">Accompagné de sa ribambelle de légumes</span>
+                                </span>
+                                <span class="proposition-plat__prix">40€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="parmentier-de-queue-de-boeuf" id="parmentier-de-queue-de-boeuf">
+                            <label for="parmentier-de-queue-de-boeuf" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Parmentier de queue de boeuf</span>
+                                    <span class="proposition-plat__description-proposition">À la truffe noire sur sa purée de panais</span>
+                                </span>
+                                <span class="proposition-plat__prix">35€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="filet-de-turbot" id="filet-de-turbot">
+                            <label for="filet-de-turbot" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Filet de turbot</span>
+                                    <span class="proposition-plat__description-proposition">Aux agrumes</span>
+                                </span>
+                                <span class="proposition-plat__prix">44€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="partie-repas menu__desserts menu__desserts--la-palette-du-gout">
+                    <h3 class="partie-repas__nom">Desserts</h3>
+                    <input type="radio" name="dessert" value="rien" id="aucun-dessert" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="paris-brest" value="paris-brest">
+                            <label for="paris-brest" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Paris-Brest</span>
+                                    <span class="proposition-plat__description-proposition">Revisité</span>
+                                </span>
+                                <span class="proposition-plat__prix">18€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="macaron-au-chocolat-d-exception" value="macaron-au-chocolat-d-exception">
+                            <label for="macaron-au-chocolat-d-exception" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Macaron au chocolat d'exception</span>
+                                    <span class="proposition-plat__description-proposition">Et glace à la vanille de Madagascar</span>
+                                </span>
+                                <span class="proposition-plat__prix">22€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="mousse-au-chocolat" value="mousse-au-chocolat">
+                            <label for="mousse-au-chocolat" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Mousse au chocolat</span>
+                                    <span class="proposition-plat__description-proposition">Au piment d'Espelette et à la truffe noire</span>
+                                </span>
+                                <span class="proposition-plat__prix">23€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <button type="submit" class="menu__btn-commander btn-principal">Commander</button>
+            
+            </form>
+        </article>
+
     </main>
+
+
+
     <footer class="footer">
         <div class="footer__contenaire">
             <h2 class="footer__titre">ohmyfood</h2>
