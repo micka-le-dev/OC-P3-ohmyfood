@@ -21,16 +21,196 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-restaurant page-restaurant--le-delice-des-sens">
     <header class="header">
         <a href="index.html" class="header__lien-retour"><i class="fa-solid fa-arrow-left"></i></a>
         <h1 class="header__logo-titre">ohmyfood</h1>
     </header>
-    <main>
 
+
+    <main>
+        <div class="page-restaurant__contenaire-image">
+            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat gastronomique au centre d'une table" class="page-restaurant__image page-restaurant__image--le-delice-des-sens">
+        </div>
         
 
+
+        <article class="page-restaurant__menu menu menu--le-delice-des-sens">
+            <div class="titre-restaurant">
+                <h2 class="titre-restaurant__nom-restaurant">Le délice des sens</h2>
+                <button class="titre-restaurant__btn-j-aime btn-j-aime"><i class="fa-solid fa-heart carte__incone-coeur"></i></button>
+            </div>
+
+            <form class="menu__form">
+
+                <section class="partie-repas menu__entrees menu__entrees--le-delice-des-sens">
+                    <h3 class="partie-repas__nom">Entrées</h3>
+                    <input type="radio" name="entree" value="rien" id="aucune-entree" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="tartare-de-thon" id="tartare-de-thon">
+                            <label class="proposition-plat__label" for="tartare-de-thon">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Tartare de thon</span>
+                                    <span class="proposition-plat__description-proposition">Assaisonné au yuzu</span>
+                                </span>
+                                <span class="proposition-plat__prix">25€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="bouchee-de-homard-croustillant" id="bouchee-de-homard-croustillant">
+                            <label class="proposition-plat__label" for="bouchee-de-homard-croustillant">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Bouchée de homard croustillant</span>
+                                    <span class="proposition-plat__description-proposition">Et sa farandole de petits légumes</span>
+                                </span>
+                                <span class="proposition-plat__prix">35€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="Veloute-de-cepes" id="Veloute-de-cepes">
+                            <label class="proposition-plat__label" for="Veloute-de-cepes">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Velouté de cèpes</span>
+                                    <span class="proposition-plat__description-proposition">Aux truffes</span>
+                                </span>
+                                <span class="proposition-plat__prix">20€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucune-entree" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="partie-repas menu__plats menu__plats--le-delice-des-sens">
+                    <h3 class="partie-repas__nom">Plats</h3>
+                    <input type="radio" name="plat" value="rien" id="aucun-plat" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="poulet-roti-aux-herbes-de-provence" id="poulet-roti-aux-herbes-de-provence">
+                            <label for="poulet-roti-aux-herbes-de-provence" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Poulet rôti aux herbes de Provence</span>
+                                    <span class="proposition-plat__description-proposition">Et sa crème de truffe</span>
+                                </span>
+                                <span class="proposition-plat__prix">40€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="langouste-rotie" id="langouste-rotie">
+                            <label for="langouste-rotie" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Langouste rôtie</span>
+                                    <span class="proposition-plat__description-proposition">Et ses légumes de saison</span>
+                                </span>
+                                <span class="proposition-plat__prix">35€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="cote-de-boeuf-angus" id="cote-de-boeuf-angus">
+                            <label for="cote-de-boeuf-angus" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Côte de boeuf Angus</span>
+                                    <span class="proposition-plat__description-proposition">Et sa purée de panais</span>
+                                </span>
+                                <span class="proposition-plat__prix">44€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-plat" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="partie-repas menu__desserts menu__desserts--le-delice-des-sens">
+                    <h3 class="partie-repas__nom">Desserts</h3>
+                    <input type="radio" name="dessert" value="rien" id="aucun-dessert" class="proposition-plat__radio">
+                    <ul class="partie-repas__propositions">
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="farandole-de-desserts" value="farandole-de-desserts">
+                            <label for="farandole-de-desserts" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Farandole de desserts</span>
+                                    <span class="proposition-plat__description-proposition">Du chef</span>
+                                </span>
+                                <span class="proposition-plat__prix">18€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="creme-brulee" value="creme-brulee">
+                            <label for="creme-brulee" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Crème brulée</span>
+                                    <span class="proposition-plat__description-proposition">Revisitée</span>
+                                </span>
+                                <span class="proposition-plat__prix">22€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                        <li class="proposition-plat">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="tiramisu" value="tiramisu">
+                            <label for="tiramisu" class="proposition-plat__label">
+                                <span class="proposition-plat__texte">
+                                    <span class="proposition-plat__nom-proposition">Tiramisu</span>
+                                    <span class="proposition-plat__description-proposition">À la noisette</span>
+                                </span>
+                                <span class="proposition-plat__prix">23€</span>
+                                <span class="proposition-plat__check">
+                                    <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
+                                </span>
+                            </label>
+                            <label for="aucun-dessert" class="proposition-plat__label proposition-plat__label--annule"></label>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <button type="submit" class="menu__btn-commander btn-principal">Commander</button>
+            
+            </form>
+        </article>
+
     </main>
+
+
+
     <footer class="footer">
         <div class="footer__contenaire">
             <h2 class="footer__titre">ohmyfood</h2>

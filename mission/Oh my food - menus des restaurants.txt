@@ -1,42 +1,51 @@
 ﻿La palette du goût
 
 Entrées
+fricassee-d-escargot
 Fricassée d'escargot
-Au piment d'Espelette 
+Au piment d'Espelette
 25€
 
+foie-gras-de-canard-mi-cuit
 Foie gras de canard mi-cuit
 Et ses copeaux de truffe noire
 35€
 
+oeuf-au-plat
 Oeuf au plat
 Assaisonné à la truffe sur lit de caviar
 20€
 
 
 Plats
+filet-de-boeuf-aux-herbes
 Filet de boeuf aux herbes
 Accompagné de sa ribambelle de légumes
 40€
 
+parmentier-de-queue-de-boeuf
 Parmentier de queue de boeuf
 À la truffe noire sur sa purée de panais
 35€
 
+filet-de-turbot
 Filet de turbot
 Aux agrumes
 44€
         
 Desserts
+paris-brest
 Paris-Brest
 Revisité
 18€
 
-Macaron au chocolat d'exception 
+macaron-au-chocolat-d-exception
+Macaron au chocolat d'exception
 Et glace à la vanille de Madagascar
 22€
 
-Mousse au chocolat 
+mousse-au-chocolat
+Mousse au chocolat
 Au piment d'Espelette et à la truffe noire
 23€  
   
@@ -45,41 +54,50 @@ Au piment d'Espelette et à la truffe noire
 Le délice des sens
 
 Entrées
+tartare-de-thon
 Tartare de thon
 Assaisonné au yuzu
 25€
 
-Bouchée de homard croustillant 
+bouchee-de-homard-croustillant
+Bouchée de homard croustillant
 Et sa farandole de petits légumes
 35€
 
-Velouté de cèpes 
+Veloute-de-cepes
+Velouté de cèpes
 Aux truffes
 20€
         
 Plats
-Poulet rôti aux herbes de Provence 
+poulet-roti-aux-herbes-de-provence
+Poulet rôti aux herbes de Provence
 Et sa crème de truffe
 40€
 
-Langouste rôtie 
+langouste-rotie
+Langouste rôtie
 Et ses légumes de saison
 35€
 
-Côte de boeuf Angus 
+cote-de-boeuf-angus
+Côte de boeuf Angus
 Et sa purée de panais
 44€
 
 Desserts
+farandole-de-desserts
 Farandole de desserts
 Du chef
 18€
 
-Crème brulée 
+creme-brulee
+Crème brulée
 Revisitée
 22€
 
-Tiramisu 
+tiramisu
+Tiramisu
 À la noisette
 23€
 
@@ -88,18 +106,22 @@ Tiramisu
 La note enchantée
 
 Entrées
-Ravioles de foie gras 
+ravioles-de-foie-gras
+Ravioles de foie gras
 Accompagnés de leur crème à la truffe
 25€
 
-Caviar osciètre 
+caviar-osciètre
+Caviar osciètre
 Sur blini à la farine de blé noir
 35€
 
+homard-et-espuma-de-potiron
 Homard et espuma de potiron
 Mariné aux zestes d'orange
 20€
 
+foie-gras-de-canard-cuit-entier
 Foie gras de canard cuit entier
 Confiture de figue et pain toasté
 35€
@@ -141,40 +163,49 @@ Déstructurée
 À la française
 
 Entrées
+tartare-de-poulpe-acidule
 Tartare de poulpe acidulé
 Aux zestes d'orange
 25€
 
+veloute-de-legumes-d-antan
 Velouté de légumes d'antan
 Carotte, panais, topinambour
 35€
 
+soupe-a-l-oignon
 Soupe à l'oignon
 Revisitée
 20€
 
 Plats
+coquilles-saint-jacques
 Coquilles Saint-Jacques
 Accompagnées d'une purée de panais
 40€
 
+magret-de-canard
 Magret de canard
 Et parmentier de pommes de terre
 35€
 
+pigeonneau-d-ille-et-vilaine
 Pigeonneau d’Ille-et-Vilaine
 Sur son lit de gnocchis aux légumes
 44€
 
 Desserts
+petales-de-violettes-glaces
 Pétales de violettes glacés
 Et purée de noisettes
 18€
 
+fondant-au-chocolat
 Fondant au chocolat
 Revisité
 22€
 
+millefeuille-croustillant
 Millefeuille croustillant
 Myrtilles et pâte d’amande
 23€
