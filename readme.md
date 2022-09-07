@@ -43,7 +43,7 @@ Extensions [VS code](https://code.visualstudio.com/) utilisées:
 
 ## Version
 
-version 0.0.2
+version 0.0.3
 
 
 ## Auteurs
@@ -51,7 +51,7 @@ version 0.0.2
 * **Mickaël Petithory** _alias_ [micka-le-dev](https://github.com/micka-le-dev)
 
 
-## Superviseurs/mentor ?
+### mentor
 
 demander son autoriastion et quelles infos mettre
 
