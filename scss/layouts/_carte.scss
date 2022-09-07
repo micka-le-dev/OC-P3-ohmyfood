@@ -42,7 +42,6 @@
         height: 30.677%;
         flex-shrink: 0;
         background-color: $couleur-tres-claire;
-        // background-color: lightcoral;
 
         padding: 20px $padding-cote-description-restaurant;
         display: flex;
@@ -52,14 +51,18 @@
 
         @include texte-responsive(10.027px, 16.4757px, $repere-ecran-min, $repere-ercan-max);
 
-        position: relative;
-        & > .btn-j-aime{
-            position: absolute;
-            top: 29.87%;
-            right: $padding-cote-description-restaurant;
-        }
     }
     &__nom-restaurant{
         @include texte-responsive(10.86px, 17.849px, $repere-ecran-min, $repere-ercan-max);
+    }
+    &__contenaire{
+        position: relative;
+        z-index: 1;
+        & > .btn-j-aime{
+            position: absolute;
+            z-index: 10;
+            bottom: 10%;
+            right: $padding-cote-description-restaurant;
+        }
     }
 }
