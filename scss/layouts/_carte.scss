@@ -33,7 +33,7 @@
         &--la-palette-du-gout{      transform: translateY(-21%) scale(1.03);        }
         &--la-note-enchantee{       transform: translateY(-36%);                    }
         &--a-la-francaise{          transform: translate(1%, -24%) scale(1.04);     }
-        &--le-delice-des-sens{      transform: translateY(-25%);                    }
+        &--le-delice-des-sens{      transform: translateY(-24%);                    }
     }
 
 
@@ -42,6 +42,7 @@
         height: 30.677%;
         flex-shrink: 0;
         background-color: $couleur-tres-claire;
+        // background-color: lightcoral;
 
         padding: 20px $padding-cote-description-restaurant;
         display: flex;
@@ -53,14 +54,9 @@
 
         position: relative;
         & > .btn-j-aime{
-            // width: calc(var(--fs-btn-j-aime) + 5px);
-            // height: calc(var(--fs-btn-j-aime) + 5px);
-
             position: absolute;
             top: 29.87%;
             right: $padding-cote-description-restaurant;
-            // font-size: var($fs-var);
-
         }
     }
     &__nom-restaurant{
