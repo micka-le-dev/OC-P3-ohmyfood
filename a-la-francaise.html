@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-restaurant page-restaurant--a-la-francaise">
     <header class="header">
         <a href="index.html" class="header__lien-retour"><i class="fa-solid fa-arrow-left"></i></a>
         <h1 class="header__logo-titre">ohmyfood</h1>
@@ -30,32 +30,32 @@
 
     <main>
         <div class="page-restaurant__contenaire-image">
-            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat gastronomique vu du dessus" class="page-restaurant__image page-restaurant__image--la-palette-du-gout">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette gastronomique" class="page-restaurant__image page-restaurant__image--a-la-francaise">
         </div>
         
 
 
-        <article class="page-restaurant__menu menu menu--la-palette-du-gout">
+        <article class="page-restaurant__menu menu menu--a-la-francaise">
             <div class="titre-restaurant">
-                <h2 class="titre-restaurant__nom-restaurant">La palette du goût</h2>
+                <h2 class="titre-restaurant__nom-restaurant">À la française</h2>
                 <button class="titre-restaurant__btn-j-aime btn-j-aime"><i class="fa-solid fa-heart carte__incone-coeur"></i></button>
             </div>
 
             <form class="menu__form">
 
-                <section class="partie-repas menu__entrees menu__entrees--la-palette-du-gout">
+                <section class="partie-repas menu__entrees menu__entrees--a-la-francaise">
                     <h3 class="partie-repas__nom">Entrées</h3>
                     <input type="radio" name="entree" value="rien" id="aucune-entree" class="proposition-plat__radio">
                     <ul class="partie-repas__propositions">
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="entree" value="entree1" id="entree1">
-                            <label class="proposition-plat__label" for="entree1">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="tartare-de-poulpe-acidule" id="tartare-de-poulpe-acidule">
+                            <label class="proposition-plat__label" for="tartare-de-poulpe-acidule">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">entree1</span>
-                                    <span class="proposition-plat__description-proposition">entree1</span>
+                                    <span class="proposition-plat__nom-proposition">Tartare de poulpe acidulé</span>
+                                    <span class="proposition-plat__description-proposition">Aux zestes d'orange</span>
                                 </span>
-                                <span class="proposition-plat__prix">entree1</span>
+                                <span class="proposition-plat__prix">25€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -64,13 +64,13 @@
                         </li>
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="entree" value="entree2" id="entree2">
-                            <label class="proposition-plat__label" for="entree2">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="veloute-de-legumes-d-antan" id="veloute-de-legumes-d-antan">
+                            <label class="proposition-plat__label" for="veloute-de-legumes-d-antan">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">entree2</span>
-                                    <span class="proposition-plat__description-proposition">entree2</span>
+                                    <span class="proposition-plat__nom-proposition">Velouté de légumes d'antan</span>
+                                    <span class="proposition-plat__description-proposition">Carotte, panais, topinambour</span>
                                 </span>
-                                <span class="proposition-plat__prix">entree2€</span>
+                                <span class="proposition-plat__prix">35€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -79,13 +79,13 @@
                         </li>
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="entree" value="entree3" id="entree3">
-                            <label class="proposition-plat__label" for="entree3">
+                            <input class="proposition-plat__radio" type="radio" name="entree" value="soupe-a-l-oignon" id="soupe-a-l-oignon">
+                            <label class="proposition-plat__label" for="soupe-a-l-oignon">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">entree3</span>
-                                    <span class="proposition-plat__description-proposition">entree3</span>
+                                    <span class="proposition-plat__nom-proposition">Soupe à l'oignon</span>
+                                    <span class="proposition-plat__description-proposition">Revisitée</span>
                                 </span>
-                                <span class="proposition-plat__prix">entree3€</span>
+                                <span class="proposition-plat__prix">20€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -96,19 +96,19 @@
                     </ul>
                 </section>
 
-                <section class="partie-repas menu__plats menu__plats--la-palette-du-gout">
+                <section class="partie-repas menu__plats menu__plats--a-la-francaise">
                     <h3 class="partie-repas__nom">Plats</h3>
                     <input type="radio" name="plat" value="rien" id="aucun-plat" class="proposition-plat__radio">
                     <ul class="partie-repas__propositions">
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="plat" value="plat1" id="plat1">
-                            <label for="plat1" class="proposition-plat__label">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="coquilles-saint-jacques" id="coquilles-saint-jacques">
+                            <label for="coquilles-saint-jacques" class="proposition-plat__label">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">plat1</span>
-                                    <span class="proposition-plat__description-proposition">plat1</span>
+                                    <span class="proposition-plat__nom-proposition">Coquilles Saint-Jacques</span>
+                                    <span class="proposition-plat__description-proposition">Accompagnées d'une purée de panais</span>
                                 </span>
-                                <span class="proposition-plat__prix">plat1</span>
+                                <span class="proposition-plat__prix">40€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -117,13 +117,13 @@
                         </li>
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="plat" value="plat2" id="plat2">
-                            <label for="plat2" class="proposition-plat__label">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="magret-de-canard" id="magret-de-canard">
+                            <label for="magret-de-canard" class="proposition-plat__label">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">plat2</span>
-                                    <span class="proposition-plat__description-proposition">plat2</span>
+                                    <span class="proposition-plat__nom-proposition">Magret de canard</span>
+                                    <span class="proposition-plat__description-proposition">Et parmentier de pommes de terre</span>
                                 </span>
-                                <span class="proposition-plat__prix">plat2</span>
+                                <span class="proposition-plat__prix">35€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -132,13 +132,13 @@
                         </li>
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="plat" value="plat3" id="plat3">
-                            <label for="plat3" class="proposition-plat__label">
+                            <input class="proposition-plat__radio" type="radio" name="plat" value="pigeonneau-d-ille-et-vilaine" id="pigeonneau-d-ille-et-vilaine">
+                            <label for="pigeonneau-d-ille-et-vilaine" class="proposition-plat__label">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">plat3</span>
-                                    <span class="proposition-plat__description-proposition">plat3</span>
+                                    <span class="proposition-plat__nom-proposition">Pigeonneau d’Ille-et-Vilaine</span>
+                                    <span class="proposition-plat__description-proposition">Sur son lit de gnocchis aux légumes</span>
                                 </span>
-                                <span class="proposition-plat__prix">plat3</span>
+                                <span class="proposition-plat__prix">44€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -149,19 +149,19 @@
                     </ul>
                 </section>
 
-                <section class="partie-repas menu__desserts menu__desserts--la-palette-du-gout">
+                <section class="partie-repas menu__desserts menu__desserts--a-la-francaise">
                     <h3 class="partie-repas__nom">Desserts</h3>
                     <input type="radio" name="dessert" value="rien" id="aucun-dessert" class="proposition-plat__radio">
                     <ul class="partie-repas__propositions">
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="dessert" id="dessert1" value="dessert1">
-                            <label for="dessert1" class="proposition-plat__label">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="petales-de-violettes-glaces" value="petales-de-violettes-glaces">
+                            <label for="petales-de-violettes-glaces" class="proposition-plat__label">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">dessert1</span>
-                                    <span class="proposition-plat__description-proposition">dessert1</span>
+                                    <span class="proposition-plat__nom-proposition">Pétales de violettes glacés</span>
+                                    <span class="proposition-plat__description-proposition">Et purée de noisettes</span>
                                 </span>
-                                <span class="proposition-plat__prix">dessert1</span>
+                                <span class="proposition-plat__prix">18€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -170,13 +170,13 @@
                         </li>
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="dessert" id="dessert2" value="dessert2">
-                            <label for="dessert2" class="proposition-plat__label">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="fondant-au-chocolat" value="fondant-au-chocolat">
+                            <label for="fondant-au-chocolat" class="proposition-plat__label">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">dessert2</span>
-                                    <span class="proposition-plat__description-proposition">dessert2</span>
+                                    <span class="proposition-plat__nom-proposition">Fondant au chocolat</span>
+                                    <span class="proposition-plat__description-proposition">Revisité</span>
                                 </span>
-                                <span class="proposition-plat__prix">dessert2</span>
+                                <span class="proposition-plat__prix">22€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
@@ -185,13 +185,13 @@
                         </li>
 
                         <li class="proposition-plat">
-                            <input class="proposition-plat__radio" type="radio" name="dessert" id="dessert3" value="dessert3">
-                            <label for="dessert3" class="proposition-plat__label">
+                            <input class="proposition-plat__radio" type="radio" name="dessert" id="millefeuille-croustillant" value="millefeuille-croustillant">
+                            <label for="millefeuille-croustillant" class="proposition-plat__label">
                                 <span class="proposition-plat__texte">
-                                    <span class="proposition-plat__nom-proposition">dessert3</span>
-                                    <span class="proposition-plat__description-proposition">dessert3</span>
+                                    <span class="proposition-plat__nom-proposition">Millefeuille croustillant</span>
+                                    <span class="proposition-plat__description-proposition">Myrtilles et pâte d’amande</span>
                                 </span>
-                                <span class="proposition-plat__prix">dessert3</span>
+                                <span class="proposition-plat__prix">23€</span>
                                 <span class="proposition-plat__check">
                                     <i class="fa-sharp fa-solid fa-circle-check proposition-plat__icone-check"></i>
                                 </span>
