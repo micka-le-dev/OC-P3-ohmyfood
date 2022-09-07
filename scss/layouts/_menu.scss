@@ -4,20 +4,20 @@
     
     &__entrees{
         &--la-note-enchantee  .proposition-plat{  @include anim-delay(4, $delta-delay-apparition, 0s);    }
-        &--la-palette-du-gout .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, 0s);    }
-        &--le-delice-des-sens .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, 0s);    }
+        &--la-palette-du-gout .proposition-plat,
+        &--le-delice-des-sens .proposition-plat,
         &--a-la-francaise     .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, 0s);    }
     }
     &__plats{
         &--la-note-enchantee  .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{4 * $delta-delay-apparition}));    }
-        &--la-palette-du-gout .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{3 * $delta-delay-apparition}));    }
-        &--le-delice-des-sens .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{3 * $delta-delay-apparition}));    }
+        &--la-palette-du-gout .proposition-plat,
+        &--le-delice-des-sens .proposition-plat,
         &--a-la-francaise     .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{3 * $delta-delay-apparition}));    }
     }
     &__desserts{
         &--la-note-enchantee  .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{(4 + 3) * $delta-delay-apparition}));    }
-        &--la-palette-du-gout .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{(3 + 3) * $delta-delay-apparition}));    }
-        &--le-delice-des-sens .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{(3 + 3) * $delta-delay-apparition}));    }
+        &--la-palette-du-gout .proposition-plat,
+        &--le-delice-des-sens .proposition-plat,
         &--a-la-francaise     .proposition-plat{  @include anim-delay(3, $delta-delay-apparition, (#{(3 + 3) * $delta-delay-apparition}));    }
     }
     &__btn-commander{
