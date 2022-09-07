@@ -1,5 +1,5 @@
 
-/* couleurs du site */
+// couleurs du site
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
@@ -10,21 +10,21 @@ $couleur-tres-claire: #fff;
 
 $couleur-dernere-etape-liste:#f5edff;
 
-$couleur-restaurant: darken($couleur-tres-claire, 3.5%); /* #f6f6f6 */
+$couleur-restaurant: darken($couleur-tres-claire, 3.5%); // #f6f6f6
 
-/* polices */
+// polices
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
 
 
-/* break point */
+// break point
 $breakpoint: 500px;
 $repere-ecran-min: 320px;
 $repere-ecran-ref: 375px;
 $repere-ercan-max: $breakpoint;
 
 
-/* dimmesions */
+// dimmesions
 $hauteur-header: 64px;
 $hauteur-position: 50px;
 
@@ -52,10 +52,10 @@ $padding-proposition-plat-vertical: 13px;
 $padding-proposition-plat-texte: $padding-proposition-plat-vertical 0 $padding-proposition-plat-vertical 11px;
 
 
-/* animations */
+// animations
 $delta-delay-apparition: 0.1s;
 
 :root{
-    /* utiliser des variables css pour les vairiables qui change de valeur dans des média queries */
+    // utiliser des variables css pour les vairiables qui change de valeur dans des média queries
     --padding-page-accueil: 20px; //$padding-cotes;
 }
