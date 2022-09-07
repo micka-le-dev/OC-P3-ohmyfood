@@ -1,0 +1,569 @@
+@charset "UTF-8";
+:root {
+  --padding-page-accueil: 20px;
+}
+
+/* Début du reset CSS */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  /*  si l'utilisateur à ses reglages par défaut,
+  alors 1rem = 10px */
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+input, button {
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+
+button {
+  background: none;
+}
+
+/* Fin du reset CSS */
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 64px;
+}
+.header__lien-retour {
+  display: block;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  left: 1.25em;
+  transform: translateY(-50%);
+  font-size: 1.25em;
+}
+.header__logo-titre {
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Shrikhand", cursive;
+}
+@media (min-width: 500px) {
+  .header {
+    height: 80px;
+    font-size: 125%;
+  }
+}
+
+.footer {
+  padding: 26px;
+  background: #353535;
+  color: #fff;
+  font-size: 13px;
+}
+.footer__titre {
+  font-family: "Shrikhand", cursive;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.footer__contenaire-lien {
+  margin-bottom: 10px;
+}
+.footer__icone-restaurant + .footer__option {
+  margin-left: 12px;
+}
+.footer__icone-partenaire {
+  font-size: 11px; /* compenser la différence de taille avec footer_icone-restaurant */
+}
+.footer__icone-partenaire + .footer__option {
+  margin-left: 10px;
+}
+.footer__contenaire {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.btn-principal {
+  width: 218px;
+  height: 50px;
+  margin: 0 calc(50% - 109px); /* pour centrer */
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  overflow: hidden;
+}
+.btn-principal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, #fface8, #ae80e5);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms ease-in-out;
+}
+.btn-principal:hover::after {
+  opacity: 1;
+}
+
+.btn-j-aime {
+  width: calc(clamp(17.55px, 5.656097561vw + 0.5495121951px, 28.83px) + 5px);
+  height: calc(clamp(17.55px, 5.656097561vw + 0.5495121951px, 28.83px) + 5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(17.55px, 5.656097561vw + 0.5495121951px, 28.83px);
+  -webkit-text-stroke: 1px #000;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, transparent 50%, #FF79DA 1%, #FF79DA, #9356DC);
+  background-size: 1% 200%;
+  transition: background-position ease-out 0.4s, -webkit-text-stroke-color ease-in-out 0.4s;
+}
+.btn-j-aime:hover, .btn-j-aime:active {
+  -webkit-text-stroke-color: transparent;
+  background-position: 0 100%;
+}
+
+.titre-restaurant {
+  padding: 0 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titre-restaurant__nom-restaurant {
+  font-size: 32px;
+  font-family: "Shrikhand", cursive;
+}
+@media (min-width: 500px) {
+  .titre-restaurant__nom-restaurant {
+    font-size: 200%;
+  }
+}
+.titre-restaurant__btn-j-aime {
+  margin-right: 26px;
+  margin-left: 16px;
+}
+
+.proposition-plat {
+  height: 68px;
+  position: relative;
+  animation: apparition-menu 400ms backwards;
+}
+.proposition-plat__label {
+  height: 100%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.2666666667);
+  font-size: clamp(13px, 3.5365853659vw - 1.6829268293px, 16px);
+  z-index: 1;
+}
+.proposition-plat__label--annule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+  background: transparent;
+}
+.proposition-plat__texte {
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 13px 0 13px 11px;
+}
+.proposition-plat__nom-proposition {
+  font-size: 118%;
+  font-weight: bold;
+}
+.proposition-plat__nom-proposition, .proposition-plat__description-proposition {
+  flex-shrink: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.proposition-plat__prix {
+  flex-shrink: 0;
+  height: 100%;
+  padding: 13px clamp(13px, 4.0243902439vw - 0.1219512195px, 20px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 109%;
+}
+.proposition-plat__radio {
+  display: none;
+}
+.proposition-plat__radio:checked + .proposition-plat__label .proposition-plat__check {
+  width: 68px;
+}
+.proposition-plat__radio:checked + .proposition-plat__label .proposition-plat__icone-check {
+  transform: translate(-50%, -50%) rotate(0);
+}
+.proposition-plat__radio:checked + .proposition-plat__label + .proposition-plat__label--annule {
+  z-index: 10;
+}
+.proposition-plat__check {
+  flex-shrink: 0;
+  height: 100%;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+  position: relative;
+  background-color: #99E2D0;
+  color: #fff;
+  font-size: 22px;
+}
+.proposition-plat__icone-check {
+  position: absolute;
+  top: 50%;
+  left: 34px;
+  transform: translate(-50%, -50%) rotate(-1turn);
+  transition: transform 0.4s ease-in-out;
+}
+
+@keyframes apparition-menu {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.carte {
+  aspect-ratio: 335/251;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: -3px 8px 8px -3px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.carte__etiquette {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 10px 13px;
+  border-radius: 2px;
+}
+.carte__contenaire-image-restaurant {
+  width: 100%;
+  overflow: hidden;
+}
+.carte__image-restaurant {
+  width: 100%;
+  object-fit: cover;
+}
+.carte__image-restaurant--la-palette-du-gout {
+  transform: translateY(-21%) scale(1.03);
+}
+.carte__image-restaurant--la-note-enchantee {
+  transform: translateY(-36%);
+}
+.carte__image-restaurant--a-la-francaise {
+  transform: translate(1%, -24%) scale(1.04);
+}
+.carte__image-restaurant--le-delice-des-sens {
+  transform: translateY(-24%);
+}
+.carte__description-restaurant {
+  height: 30.677%;
+  flex-shrink: 0;
+  background-color: #fff;
+  padding: 20px 7.46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: clamp(5.9733333333px, 1.8666666667vw + 0px, 9.3333333333px);
+  font-size: clamp(10.027px, 3.2320365854vw + 0.3155170732px, 16.4757px);
+}
+.carte__nom-restaurant {
+  font-size: clamp(10.86px, 3.501097561vw + 0.3435121951px, 17.849px);
+}
+.carte__contenaire {
+  position: relative;
+  z-index: 1;
+}
+.carte__contenaire > .btn-j-aime {
+  position: absolute;
+  z-index: 10;
+  bottom: 10%;
+  right: 7.46%;
+}
+
+.menu {
+  padding: 40px 14px 72px;
+}
+.menu__entrees--la-note-enchantee .proposition-plat:nth-child(1) {
+  animation-delay: 0s;
+}
+.menu__entrees--la-note-enchantee .proposition-plat:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.menu__entrees--la-note-enchantee .proposition-plat:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.menu__entrees--la-note-enchantee .proposition-plat:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.menu__entrees--la-palette-du-gout .proposition-plat:nth-child(1), .menu__entrees--le-delice-des-sens .proposition-plat:nth-child(1), .menu__entrees--a-la-francaise .proposition-plat:nth-child(1) {
+  animation-delay: 0s;
+}
+.menu__entrees--la-palette-du-gout .proposition-plat:nth-child(2), .menu__entrees--le-delice-des-sens .proposition-plat:nth-child(2), .menu__entrees--a-la-francaise .proposition-plat:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.menu__entrees--la-palette-du-gout .proposition-plat:nth-child(3), .menu__entrees--le-delice-des-sens .proposition-plat:nth-child(3), .menu__entrees--a-la-francaise .proposition-plat:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.menu__plats--la-note-enchantee .proposition-plat:nth-child(1) {
+  animation-delay: calc(0s + 0.4s);
+}
+.menu__plats--la-note-enchantee .proposition-plat:nth-child(2) {
+  animation-delay: calc(0.1s + 0.4s);
+}
+.menu__plats--la-note-enchantee .proposition-plat:nth-child(3) {
+  animation-delay: calc(0.2s + 0.4s);
+}
+.menu__plats--la-palette-du-gout .proposition-plat:nth-child(1), .menu__plats--le-delice-des-sens .proposition-plat:nth-child(1), .menu__plats--a-la-francaise .proposition-plat:nth-child(1) {
+  animation-delay: calc(0s + 0.3s);
+}
+.menu__plats--la-palette-du-gout .proposition-plat:nth-child(2), .menu__plats--le-delice-des-sens .proposition-plat:nth-child(2), .menu__plats--a-la-francaise .proposition-plat:nth-child(2) {
+  animation-delay: calc(0.1s + 0.3s);
+}
+.menu__plats--la-palette-du-gout .proposition-plat:nth-child(3), .menu__plats--le-delice-des-sens .proposition-plat:nth-child(3), .menu__plats--a-la-francaise .proposition-plat:nth-child(3) {
+  animation-delay: calc(0.2s + 0.3s);
+}
+.menu__desserts--la-note-enchantee .proposition-plat:nth-child(1) {
+  animation-delay: calc(0s + 0.7s);
+}
+.menu__desserts--la-note-enchantee .proposition-plat:nth-child(2) {
+  animation-delay: calc(0.1s + 0.7s);
+}
+.menu__desserts--la-note-enchantee .proposition-plat:nth-child(3) {
+  animation-delay: calc(0.2s + 0.7s);
+}
+.menu__desserts--la-palette-du-gout .proposition-plat:nth-child(1), .menu__desserts--le-delice-des-sens .proposition-plat:nth-child(1), .menu__desserts--a-la-francaise .proposition-plat:nth-child(1) {
+  animation-delay: calc(0s + 0.6s);
+}
+.menu__desserts--la-palette-du-gout .proposition-plat:nth-child(2), .menu__desserts--le-delice-des-sens .proposition-plat:nth-child(2), .menu__desserts--a-la-francaise .proposition-plat:nth-child(2) {
+  animation-delay: calc(0.1s + 0.6s);
+}
+.menu__desserts--la-palette-du-gout .proposition-plat:nth-child(3), .menu__desserts--le-delice-des-sens .proposition-plat:nth-child(3), .menu__desserts--a-la-francaise .proposition-plat:nth-child(3) {
+  animation-delay: calc(0.2s + 0.6s);
+}
+.menu__btn-commander {
+  margin-top: 50px;
+}
+
+.partie-repas {
+  padding-top: 46px;
+}
+.partie-repas__nom {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 7px;
+  margin-bottom: 15px;
+}
+.partie-repas__nom::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 10%;
+  background-color: #99E2D0;
+  margin-top: 9px;
+}
+.partie-repas__propositions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.page-accueil__titre {
+  padding-bottom: 30px;
+}
+@media (min-width: 500px) {
+  .page-accueil__titre {
+    text-align: center;
+    font-size: 200%;
+  }
+}
+
+.lieu__position {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  box-shadow: inset 0 2px 6px -3px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+.lieu__position-texte {
+  font-weight: bold;
+}
+@media (min-width: 500px) {
+  .lieu__position {
+    height: 80px;
+  }
+}
+.lieu__conseil-et-explorer {
+  padding: 40px;
+  padding-bottom: 57px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.lieu__conseil {
+  padding-bottom: 35px;
+}
+.lieu__conseil--titre {
+  padding-bottom: 20px;
+}
+
+.manuel {
+  padding: 50px 20px 68px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.manuel > ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  list-style: none;
+  counter-reset: li;
+}
+.manuel__etape {
+  position: relative;
+  width: calc(100% - 25px);
+  height: 73px;
+  background-color: #f6f6f6;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1333333333);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding-left: 36px;
+  counter-increment: li;
+}
+.manuel__etape::before {
+  content: counter(li);
+  position: absolute;
+  left: -12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  width: 25px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #9356DC;
+  font-size: 14px;
+}
+.manuel__icone {
+  color: #7e7e7e;
+  display: inline-block;
+  width: 19px;
+  text-align: center;
+  font-size: 19px;
+}
+.manuel__instruction {
+  font-weight: bold;
+  margin-left: 21px;
+}
+.manuel__etape:last-child {
+  background-color: #f5edff;
+}
+.manuel__etape:last-child > .manuel__icone {
+  color: #9356DC;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 58px var(--padding-page-accueil) 64px;
+}
+.restaurants__liste {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: clamp(18px, 4.8vw, 72px);
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .restaurants__liste {
+    --padding-page-accueil:clamp(20px,3.3vw, 50px);
+    grid-template-columns: repeat(auto-fit, 460px);
+  }
+}
+
+.page-restaurant > main {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.page-restaurant > main::before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 375/220;
+}
+.page-restaurant__contenaire-image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  aspect-ratio: 375/257;
+  overflow: hidden;
+}
+.page-restaurant__image {
+  width: 100%;
+  object-fit: cover;
+}
+.page-restaurant__image--la-note-enchantee {
+  transform: translateY(-21%);
+}
+.page-restaurant__image--le-delice-des-sens {
+  transform: scale(1.05);
+}
+.page-restaurant__menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
