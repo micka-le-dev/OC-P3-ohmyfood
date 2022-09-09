@@ -196,6 +196,9 @@ body {
   z-index: -10;
   background: transparent;
 }
+.proposition-plat--poulet-roti-aux-herbes-de-provence {
+  height: calc(68px + 1.18 * clamp(13px, 3.5365853659vw - 1.6829268293px, 16px));
+}
 .proposition-plat__texte {
   flex-shrink: 1;
   flex-grow: 1;
@@ -209,7 +212,7 @@ body {
   font-size: 118%;
   font-weight: bold;
 }
-.proposition-plat__nom-proposition, .proposition-plat__description-proposition {
+.proposition-plat__nom-proposition:not(.proposition-plat__nom-proposition--poulet-roti-aux-herbes-de-provence), .proposition-plat__description-proposition {
   flex-shrink: 0;
   overflow: hidden;
   white-space: nowrap;
