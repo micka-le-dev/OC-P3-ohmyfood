@@ -53,7 +53,7 @@ version 0.1.0
 
 ### mentor
 
-demander son autoriastion et quelles infos mettre
+* **Ernest Mekontso** (ernestmekontso@gmail.com)
 
 
 ## Méthode de travail avec git
