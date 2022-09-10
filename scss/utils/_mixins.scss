@@ -10,3 +10,21 @@
         }
     }
 }
+
+@mixin prepa-loader($nb-boule,$decalage-en-tour,$couleurs){
+    @for $i from 1 to (nb-boule + 1) {
+        &--boule#{$i}{
+            transform: translateY(-50%) rotate(#{$decalage-en-tour * $i}turn);
+            &::after{
+                content: "";
+                display: block;
+                background-color: $couleurs[$i];// comment on code ça ?
+                border-radius: 50%;
+                aspect-ratio: 1/1;
+                height: 100%;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}
