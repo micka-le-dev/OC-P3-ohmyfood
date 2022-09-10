@@ -1,5 +1,5 @@
 .body-accueil{
-    &--loading{
+    &--loading{ // tmp
         height: 100vh;
         overflow: hidden;
     }
@@ -20,8 +20,42 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        background-color: lightblue;
+        background-color: lightblue; // tmp
         aspect-ratio: 1 / 1;
         width: 50vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.loader-spinner{
+    aspect-ratio: 1 / 1;
+    width: 80%;
+    background-color: lightgreen; // tmp
+    transform: rotate(0turn);
+
+    &__boule{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: left;
+        background-color: lightcoral; // tmp
+        aspect-ratio: 10 / 1;
+        width: 50%;
+        &--boule-1{
+            transform: translateY(-50%) rotate(0.04turn);
+            background-color: lightgoldenrodyellow; // tmp
+            &::after{
+                content: "";
+                display: block;
+                background-color: black; // tmp
+                border-radius: 50%;
+                aspect-ratio: 1/1;
+                height: 100%;
+                position: absolute;
+                right: 0;
+            }
+        }
     }
 }
