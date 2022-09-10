@@ -23,18 +23,21 @@
 </head>
 <body class="page-accueil">
     <header class="header">
-        <!-- <h1 class="header__logo-titre">ohmyfood</h1> -->
         <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header__logo">
     </header>
     <main>
-        <section class="lieu">
-            <p class="lieu__position"><i class="fa-solid fa-location-dot lieu__position-icone"></i> <span class="lieu__position-texte">Paris, Belleville</span></p>
-            <div class="lieu__conseil-et-explorer">
-                <h3 class="lieu__conseil--titre">Réservez le menu qui vous convient</h3>
-                <p class="lieu__conseil">Découvrez des restaurant d'exception, séléctionnés par nos soins.</p>
-                <button class="lieu__btn-explorer btn-principal">Explorer nos restaurants</button>
-            </div>    
-        </section>
+        <form class="recherche">
+            <div class="rechercher__contenaire-barre">
+                <div class="recherche__barre-input">
+                    <i class="fa-solid fa-location-dot recherche__icone"></i>
+                    <input type="search" name="recherche-lieu" id="rechercher-lieu" class="recherche__texte" placeholder="Paris, Belleville" value="lieu">
+                </div>
+                <label for="rechercher-lieu" class="recherche__label"></label>
+            </div>
+            <h3 class="recherche__conseil--titre">Réservez le menu qui vous convient</h3>
+            <p class="recherche__conseil">Découvrez des restaurant d'exception, séléctionnés par nos soins.</p>
+            <button type="submit" class="recherche__btn btn-principal">Explorer nos restaurants</button>
+        </form>
 
         <aside class="manuel">
             <h2 class="page-accueil__titre manuel__titre">Fonctionnement</h2>
