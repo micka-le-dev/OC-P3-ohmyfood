@@ -1,0 +1,27 @@
+.body-accueil{
+    &--loading{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+.loader{
+    &__fond{
+        position: fixed;
+        background: #fff;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9000;
+    }
+    &__loading{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: lightblue;
+        aspect-ratio: 1 / 1;
+        width: 50vmin;
+    }
+}
