@@ -52,7 +52,7 @@
 }
 .loader-boule{
     aspect-ratio: 1 / 1;
-    width: 2vmin;
+    width: 3vmin;
     border-radius: 50%;
     @include prepare-couleur-boule(map-get($map-loader, nb-boule),map-get($map-loader, couleurs-boules));
 
