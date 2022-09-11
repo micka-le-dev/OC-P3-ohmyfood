@@ -12,6 +12,29 @@ $couleur-dernere-etape-liste:#f5edff;
 
 $couleur-restaurant: darken($couleur-tres-claire, 3.5%); // #f6f6f6
 
+
+// loader
+$decalage-boules-en-tour: 0.04turn;
+$map-loader: (
+    decalage-boules-en-seconde: 0.1s,
+    duree-cycle-acceleration-boule: 2s,
+    couleurs-boules:(
+        boule-1 : $couleur-primaire,
+        boule-2 : $couleur-secondaire,
+        boule-3 : $couleur-tertiaire,
+        boule-4 : $couleur-primaire,
+        boule-5 : $couleur-secondaire,
+    ),
+    dephasages-boules:(
+        boule-1: #{(0 * $decalage-boules-en-tour)},
+        boule-2: #{(-1 * $decalage-boules-en-tour)},
+        boule-3: #{(-2 * $decalage-boules-en-tour)},
+        boule-4: #{(-3 * $decalage-boules-en-tour)},
+        boule-5: #{(-4 * $decalage-boules-en-tour)},
+    ),
+    nb-boule: 5
+);
+
 // polices
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
