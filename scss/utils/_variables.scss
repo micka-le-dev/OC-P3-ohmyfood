@@ -12,6 +12,19 @@ $couleur-dernere-etape-liste:#f5edff;
 
 $couleur-restaurant: darken($couleur-tres-claire, 3.5%); // #f6f6f6
 
+$map-loader: (
+    couleurs-boules:(
+        boule-1 : $couleur-primaire,
+        boule-2 : $couleur-secondaire,
+        boule-3 : $couleur-tertiaire,
+        boule-4 : $couleur-primaire,
+        boule-5 : $couleur-secondaire,
+        // boule-6 : $couleur-tertiaire
+    ),
+    decalage-boules: 0.02, // en turn
+    nb-boule: 5
+);
+
 // polices
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;

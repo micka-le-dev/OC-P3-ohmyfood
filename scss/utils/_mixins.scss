@@ -1,4 +1,6 @@
 
+@use "sass:math";
+
 @mixin texte-responsive($fs-min, $fs-max, $ecran-min, $ecran-max){
     font-size: taille-responsive($fs-min, $fs-max, $ecran-min, $ecran-max);
 }
@@ -11,20 +13,16 @@
     }
 }
 
-@mixin prepa-loader($nb-boule,$decalage-en-tour,$couleurs){
-    @for $i from 1 to (nb-boule + 1) {
-        &--boule#{$i}{
-            transform: translateY(-50%) rotate(#{$decalage-en-tour * $i}turn);
-            &::after{
-                content: "";
-                display: block;
-                background-color: $couleurs[$i];// comment on code ça ?
-                border-radius: 50%;
-                aspect-ratio: 1/1;
-                height: 100%;
-                position: absolute;
-                right: 0;
-            }
+@mixin prepare-phase-boule($nb-boule,$decalage-en-tour){
+    @for $i from 1 to ($nb-boule + 1){
+        &--boule-#{$i}{   transform: rotate(#{(($nb-boule - $i) * $decalage-en-tour)}turn);     }
+    }
+}
+@mixin prepare-couleur-boule($nb-boule,$map-couleur){
+    @for $i from 1 to ($nb-boule + 1){
+        &--boule-#{$i}{
+            background-color: map-get($map-couleur, boule-#{$i});
+            opacity: #{math.div($nb-boule - $i + 1, $nb-boule)};
         }
     }
 }
