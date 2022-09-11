@@ -13,9 +13,9 @@
     }
 }
 
-@mixin prepare-phase-boule($nb-boule,$decalage-en-tour){
+@mixin prepare-phase-boule($nb-boule,$dephasages-des-boules){
     @for $i from 1 to ($nb-boule + 1){
-        &--boule-#{$i}{   transform: rotate(#{(($nb-boule - $i) * $decalage-en-tour)}turn);     }
+        &-#{$i}{   transform: rotate(#{map-get($dephasages-des-boules, boule-#{$i})});     }
     }
 }
 @mixin prepare-couleur-boule($nb-boule,$map-couleur){
@@ -23,6 +23,14 @@
         &--boule-#{$i}{
             background-color: map-get($map-couleur, boule-#{$i});
             opacity: #{math.div($nb-boule - $i + 1, $nb-boule)};
+        }
+    }
+}
+
+@mixin delai-acceleration-boule($nb-boule,$delai) {
+    @for $i from 1 to ($nb-boule + 1){
+        &--aiguille-#{$i}{
+            animation-delay: #{(($i - 1) * $delai)};
         }
     }
 }

@@ -1,3 +1,6 @@
+
+@use "sass:math";
+
 .body-accueil{
     &--loading{ // tmp
         height: 100vh;
@@ -19,37 +22,50 @@
         @extend %pos-center;
         aspect-ratio: 1 / 1;
         width: 50vmin;
-        // background-color: lightcoral; // tmp
         @extend %flex-center;
     }
 }
 
 .loader-spinner{
     aspect-ratio: 1 / 1;
-    width: 80%;
-    // background-color: lightgreen; // tmp
+    width: 100%;
     transform: rotate(0turn);
+    animation: rotation 3s linear infinite;
     
     &__centre{
         @extend %pos-center;
+        transform: rotate(-0.25turn);
     }
-    
+    &__dephaseur{
+        @include prepare-phase-boule(map-get($map-loader, nb-boule),map-get($map-loader, dephasages-boules));
+    }
     &__aiguille{
         position: absolute;
-        width: 25vmin;
+        width: 20vmin;
         transform-origin: left;
-        // background-color: lightblue; // tmp
         display: flex;
         justify-content: flex-end;
         align-items: center;
-
-        @include prepare-phase-boule(map-get($map-loader, nb-boule),map-get($map-loader, decalage-boules));
+        animation: acceleration-boules map-get($map-loader,duree-cycle-acceleration-boule) infinite;
+        @include delai-acceleration-boule(map-get($map-loader, nb-boule),map-get($map-loader, decalage-boules-en-seconde))
     }
 }
 .loader-boule{
-    // background-color: black; // tmp
     aspect-ratio: 1 / 1;
     width: 2vmin;
     border-radius: 50%;
     @include prepare-couleur-boule(map-get($map-loader, nb-boule),map-get($map-loader, couleurs-boules));
+
+}
+
+@keyframes acceleration-boules {
+    0% {    transform:rotate(0turn);    }
+    50% {   transform: rotate(1turn);   }
+    100% {  transform: rotate(1turn);   }
+    
+
+}
+@keyframes rotation {
+    from{ transform: rotate(0turn);}
+    to{   transform: rotate(1turn);}
 }
