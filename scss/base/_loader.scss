@@ -2,22 +2,20 @@
 @use "sass:math";
 
 .body-accueil{
-    &--loading{ // tmp
-        height: 100vh;
-        overflow: hidden;
-    }
+    animation: no-scroll-body 0.1s 2.9s backwards;
 }
 
 .loader{
-    &__fond{
-        position: fixed;
-        background: #fff;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 9000;
-    }
+    position: fixed;
+    background: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9000;
+
+    animation: disparition-loader 0.2s 2.8s forwards;
+
     &__contenaire{
         @extend %pos-center;
         aspect-ratio: 1 / 1;
@@ -27,8 +25,6 @@
 }
 
 .loader-spinner{
-    aspect-ratio: 1 / 1;
-    width: 100%;
     transform: rotate(0turn);
     animation: rotation 3s linear infinite;
     
@@ -68,4 +64,18 @@
 @keyframes rotation {
     from{ transform: rotate(0turn);}
     to{   transform: rotate(1turn);}
+}
+
+@keyframes no-scroll-body {
+    from{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+@keyframes disparition-loader {
+    to{
+        opacity: 0;
+        display: none;
+        z-index: -9999;
+    }
 }
