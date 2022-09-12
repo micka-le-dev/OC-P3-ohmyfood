@@ -43,7 +43,7 @@ Extensions [VS code](https://code.visualstudio.com/) utilisées:
 
 ## Version
 
-version 0.1.0
+version 0.1.1
 
 
 ## Auteurs

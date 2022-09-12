@@ -2,9 +2,7 @@
 .header{
     position: relative;
     height: $hauteur-header;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 
     &__lien-retour{
         display: block;
@@ -18,11 +16,6 @@
         font-size: 1.25em;
     }
 
-    // &__logo-titre{
-    //     text-align: center;
-    //     padding: 10px 0;
-    //     font-family: $police-titre;
-    // }
     &__logo{
         height: 50%;
     }

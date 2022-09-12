@@ -2,9 +2,7 @@
     width: calc($fs-btn-j-aime + 5px);
     height: calc($fs-btn-j-aime + 5px);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     
     font-size: $fs-btn-j-aime;
     

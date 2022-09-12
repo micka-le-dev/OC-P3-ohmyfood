@@ -10,7 +10,7 @@
     }
 }
 .recherche{
-    background-color: darken($couleur-tres-claire, 3.5%);
+    background-color: $couleur-restaurant;
     padding-bottom:  57px;
     &__contenaire-barre{
         position: relative;
@@ -22,15 +22,10 @@
         z-index: 1;
     }
     &__barre-input{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        @extend %pos-center;
         z-index: 100;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         gap: 17px;
         
     }
@@ -40,11 +35,7 @@
         width: auto;
     }
     &__label{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        @extend %pos-abs-recouvre;
         z-index: 10;
         cursor: text;
         &--position{
