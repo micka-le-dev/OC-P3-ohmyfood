@@ -1,0 +1,78 @@
+
+@use "sass:math";
+
+.body-accueil{
+    animation: no-scroll-body 0.1s 2.9s backwards;
+}
+
+.loader{
+    @include pos-recouvre(fixed);
+    z-index: 9000;
+    
+    background: #fff;
+
+    animation: disparition-loader 0.2s 2.8s forwards;
+
+    &__contenaire{
+        @extend %pos-center;
+        aspect-ratio: 1 / 1;
+        width: 50vmin;
+        @extend %flex-center;
+    }
+}
+
+.loader-spinner{
+    transform: rotate(0turn);
+    animation: rotation 3s linear infinite;
+    
+    &__centre{
+        @extend %pos-center;
+        transform: rotate(-0.25turn);
+    }
+    &__dephaseur{
+        @include prepare-phase-boule(map-get($map-loader, nb-boule),map-get($map-loader, dephasages-boules));
+    }
+    &__aiguille{
+        position: absolute;
+        width: 20vmin;
+        transform-origin: left;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        animation: acceleration-boules map-get($map-loader,duree-cycle-acceleration-boule) infinite;
+        @include delai-acceleration-boule(map-get($map-loader, nb-boule),map-get($map-loader, decalage-boules-en-seconde))
+    }
+}
+.loader-boule{
+    aspect-ratio: 1 / 1;
+    width: 3vmin;
+    border-radius: 50%;
+    @include prepare-couleur-boule(map-get($map-loader, nb-boule),map-get($map-loader, couleurs-boules));
+
+}
+
+@keyframes acceleration-boules {
+    0% {    transform:rotate(0turn);    }
+    50% {   transform: rotate(1turn);   }
+    100% {  transform: rotate(1turn);   }
+    
+
+}
+@keyframes rotation {
+    from{ transform: rotate(0turn);}
+    to{   transform: rotate(1turn);}
+}
+
+@keyframes no-scroll-body {
+    from{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+@keyframes disparition-loader {
+    to{
+        opacity: 0;
+        display: none;
+        z-index: -9999;
+    }
+}

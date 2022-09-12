@@ -19,11 +19,7 @@
     overflow: hidden;
     &::after{
         content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        @extend %pos-abs-recouvre;
         background-image: linear-gradient(to bottom, lighten($couleur-secondaire,10%), lighten($couleur-primaire,10%));
         opacity: 0;
         z-index: -1;

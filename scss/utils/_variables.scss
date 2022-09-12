@@ -2,7 +2,7 @@
 // couleurs du site
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
-$couleur-tertiaire: #99E2D0;
+$couleur-tertiaire: #99E2D0; // hsl(165,55,74)
 
 $couleur-tres-sombre: #000;
 $couleur-sombre: #353535;
@@ -11,6 +11,31 @@ $couleur-tres-claire: #fff;
 $couleur-dernere-etape-liste:#f5edff;
 
 $couleur-restaurant: darken($couleur-tres-claire, 3.5%); // #f6f6f6
+// -8.24%
+// #7e7e7e
+$couleur-tertiaire-sombre: darken(saturate($couleur-tertiaire, 82%), 48%); // hsl(165,100,26) = #008766
+
+// loader
+$decalage-boules-en-tour: 0.04turn;
+$map-loader: (
+    decalage-boules-en-seconde: 0.1s,
+    duree-cycle-acceleration-boule: 2s,
+    couleurs-boules:(
+        boule-1 : $couleur-primaire,
+        boule-2 : $couleur-secondaire,
+        boule-3 : $couleur-tertiaire,
+        boule-4 : $couleur-primaire,
+        boule-5 : $couleur-secondaire,
+    ),
+    dephasages-boules:(
+        boule-1: #{(0 * $decalage-boules-en-tour)},
+        boule-2: #{(-1 * $decalage-boules-en-tour)},
+        boule-3: #{(-2 * $decalage-boules-en-tour)},
+        boule-4: #{(-3 * $decalage-boules-en-tour)},
+        boule-5: #{(-4 * $decalage-boules-en-tour)},
+    ),
+    nb-boule: 5
+);
 
 // polices
 $police-titre: 'Shrikhand', cursive;

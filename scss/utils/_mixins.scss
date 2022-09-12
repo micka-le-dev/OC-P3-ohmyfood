@@ -1,4 +1,6 @@
 
+@use "sass:math";
+
 @mixin texte-responsive($fs-min, $fs-max, $ecran-min, $ecran-max){
     font-size: taille-responsive($fs-min, $fs-max, $ecran-min, $ecran-max);
 }
@@ -9,4 +11,34 @@
             animation-delay: calc(($i - 1) * $delta-delay + $delay-offset);
         }
     }
+}
+
+@mixin prepare-phase-boule($nb-boule,$dephasages-des-boules){
+    @for $i from 1 to ($nb-boule + 1){
+        &-#{$i}{   transform: rotate(#{map-get($dephasages-des-boules, boule-#{$i})});     }
+    }
+}
+@mixin prepare-couleur-boule($nb-boule,$map-couleur){
+    @for $i from 1 to ($nb-boule + 1){
+        &--boule-#{$i}{
+            background-color: map-get($map-couleur, boule-#{$i});
+            opacity: #{math.div($nb-boule - $i + 1, $nb-boule)};
+        }
+    }
+}
+
+@mixin delai-acceleration-boule($nb-boule,$delai) {
+    @for $i from 1 to ($nb-boule + 1){
+        &--aiguille-#{$i}{
+            animation-delay: #{(($i - 1) * $delai)};
+        }
+    }
+}
+
+@mixin pos-recouvre($position: absolute){
+    position: $position;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
