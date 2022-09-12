@@ -19,7 +19,7 @@
         position: relative;
         width: calc(100% - $largeur-numero-liste);
         height: $hauteur-etape-liste;
-        background-color: darken($couleur-tres-claire, 3.5%); //#f6f6f6
+        background-color: $couleur-restaurant;
         box-shadow: 0 3px 10px #0002;
         border-radius: 16px;
 

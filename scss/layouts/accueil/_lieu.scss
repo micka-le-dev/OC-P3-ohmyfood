@@ -10,7 +10,7 @@
     }
 }
 .recherche{
-    background-color: darken($couleur-tres-claire, 3.5%);
+    background-color: $couleur-restaurant;
     padding-bottom:  57px;
     &__contenaire-barre{
         position: relative;
