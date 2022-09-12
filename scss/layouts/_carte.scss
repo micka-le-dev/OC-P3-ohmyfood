@@ -1,9 +1,7 @@
 .carte{
     aspect-ratio: 335 / 251;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @extend %flex-column-between;
 
     border-radius: $radius-carte;
     overflow: hidden;
@@ -44,9 +42,7 @@
         background-color: $couleur-tres-claire;
 
         padding: 20px $padding-cote-description-restaurant;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @extend %flex-column-center;
         row-gap: taille-responsive-ref(7px, $repere-ecran-ref, $repere-ecran-min, $repere-ercan-max);
 
         @include texte-responsive(10.027px, 16.4757px, $repere-ecran-min, $repere-ercan-max);

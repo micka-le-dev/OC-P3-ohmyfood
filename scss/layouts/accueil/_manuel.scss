@@ -6,9 +6,7 @@
 
 
     & > ol{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex-column-center;
         row-gap: $gap-liste;
 
         list-style: none;
@@ -33,9 +31,7 @@
             position: absolute;
             left:calc(-1 * $largeur-numero-liste/2);
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             aspect-ratio: 1/1;
             width: $largeur-numero-liste;
