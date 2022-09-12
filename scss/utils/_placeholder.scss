@@ -13,20 +13,11 @@
 }
 
 %pos-abs-recouvre{
-    position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    @include pos-recouvre(absolute);
 }
 
 %flex-column-between{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-%flex-column-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
