@@ -1,5 +1,6 @@
 .carte{
     aspect-ratio: 335 / 251;
+    /* largeur par defaut de 100%, responsive gérer par grid-template de .restaurants__liste */
 
     @extend %flex-column-between;
 
