@@ -35,7 +35,7 @@
         width: auto;
     }
     &__label{
-        @extend %pos-abs-recouvre;
+        @include pos-recouvre(absolute);
         z-index: 10;
         cursor: text;
         &--position{

@@ -12,9 +12,6 @@
     transform: translate(-50%,-50%);
 }
 
-%pos-abs-recouvre{
-    @include pos-recouvre(absolute);
-}
 
 %flex-column-between{
     display: flex;
