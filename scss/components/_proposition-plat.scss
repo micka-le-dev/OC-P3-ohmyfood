@@ -21,7 +21,9 @@
         }
     }
     &--poulet-roti-aux-herbes-de-provence{
-        height: calc($hauteur-proposition-plat + 1.18 * $fs-proposition-plat);
+        @media (max-width: 330px) {
+            height: calc($hauteur-proposition-plat + 1.18 * $fs-proposition-plat);
+        }
     }
     &__texte{
         flex-shrink: 1;
