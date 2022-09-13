@@ -1,17 +1,7 @@
-.lieu{
-    &__position{
-
-        &-texte{
-            font-weight: bold;
-        }
-        @media (min-width: $breakpoint){
-            height: calc($hauteur-position * 1.6);
-        }
-    }
-}
 .recherche{
     background-color: $couleur-restaurant;
     padding-bottom:  57px;
+    
     &__contenaire-barre{
         position: relative;
         height: $hauteur-position;
@@ -32,13 +22,13 @@
     &__texte{
         font-weight: bold;
         background-color: transparent;
-        width: auto;
+        width: 150px;
     }
     &__label{
         @include pos-recouvre(absolute);
         z-index: 10;
         cursor: text;
-        &--position{
+        &--position{    // pour ne pas tout recouvrir
             cursor: text;
         }
     }
