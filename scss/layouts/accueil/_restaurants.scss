@@ -10,7 +10,7 @@
 
         @media (min-width: $breakpoint){
             --padding-page-accueil:clamp(20px,3.3vw, 50px);
-            grid-template-columns: repeat(auto-fit, $max-width-carte-accueil);
+            grid-template-columns: repeat(auto-fit, $max-width-carte-accueil); /* defini la largeur des cartes */
         }
     }
 }
