@@ -6,6 +6,13 @@
 
     font-size: 16px;
 
+    &__contenaire{
+        margin: 0 auto;
+        @media (min-width:$breakpoint-2) {
+            margin: 20px auto;
+        }
+    }
+
     &__titre{
         font-family: $police-titre;
         padding-bottom: 20px;
@@ -13,6 +20,18 @@
         font-size: 20px;
         font-weight: 100;
         letter-spacing:1px;
+        @media (min-width:$breakpoint-2) {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__liste{
+        @media (min-width:$breakpoint-2) {
+            display: flex;
+            justify-content: center;
+            gap:#{2*$gap-liste};
+        }
     }
 
     &__contenaire-lien{
@@ -30,10 +49,5 @@
 
     &__icone-partenaire + &__option{
         margin-left: 14px;
-    }
-
-    &__contenaire{
-        max-width: $breakpoint;
-        margin: 0 auto;
     }
 }
