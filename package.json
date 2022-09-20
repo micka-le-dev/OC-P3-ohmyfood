@@ -6,6 +6,10 @@
   "scripts": {
     "sass":"sass --watch scss/main.scss:css/style.css",
     "compile-sass":"sass scss/main.scss:css/style.css",
+
+    "product--etape-1":"sass scss/main.scss:css/no-prefix/style.css",
+    "product--etape-2":"postcss css/no-prefix/style.css --use autoprefixer -d css/",
+    
     "prefix": "postcss css/style.css --use autoprefixer -d css/prefixed/"
   },
   "author": "",
