@@ -4,13 +4,13 @@
     background: $couleur-sombre;
     color: $couleur-tres-claire;
 
-    font-size: 13px;
+    font-size: 16px;
 
     &__titre{
         font-family: $police-titre;
         padding-bottom: 20px;
 
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 100;
         letter-spacing:1px;
     }
@@ -21,15 +21,15 @@
     }
 
     &__icone-restaurant + &__option{
-        margin-left: 12px;
+        margin-left: 16px;
     }
 
     &__icone-partenaire{
-        font-size: 11px; /* compenser la différence de taille avec footer_icone-restaurant */
+        font-size: 14px; /* compenser la différence de taille avec footer_icone-restaurant */
     }
 
     &__icone-partenaire + &__option{
-        margin-left: 10px;
+        margin-left: 14px;
     }
 
     &__contenaire{
