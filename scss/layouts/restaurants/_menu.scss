@@ -1,6 +1,7 @@
 
 .menu{
     padding: 40px 14px 72px;
+    // font-size: 110%;
     
     &__entrees{
         &--la-note-enchantee  .proposition-plat{  @include anim-delay(4, $delta-delay-apparition, 0s);    }

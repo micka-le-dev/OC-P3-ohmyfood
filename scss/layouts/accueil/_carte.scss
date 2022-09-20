@@ -48,11 +48,8 @@
         justify-content: center;
         row-gap: taille-responsive-ref(7px, $repere-ecran-ref, $repere-ecran-min, $repere-ercan-max);
 
-        @include texte-responsive(10.027px, 16.4757px, $repere-ecran-min, $repere-ercan-max);
+        @include texte-responsive(16px, 16.4757px, $repere-ecran-min, $repere-ercan-max);
 
-    }
-    &__nom-restaurant{
-        @include texte-responsive(10.86px, 17.849px, $repere-ecran-min, $repere-ercan-max);
     }
     &__contenaire{
         position: relative;

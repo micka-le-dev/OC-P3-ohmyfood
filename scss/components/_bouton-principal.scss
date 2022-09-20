@@ -4,6 +4,8 @@
     height: $hauteur-btn;
     margin: 0 calc(50% - $largeur-btn/2); /* pour centrer */
     border-radius: $hauteur-btn;
+    box-shadow: 0px 2px 5px #0004;
+    transition: box-shadow 300ms ease-in-out;
     
     text-align: center;
     vertical-align: middle;
@@ -20,12 +22,13 @@
     &::after{
         content: "";
         @include pos-recouvre(absolute);
-        background-image: linear-gradient(to bottom, lighten($couleur-secondaire,10%), lighten($couleur-primaire,10%));
+        background-image: linear-gradient(to bottom, lighten($couleur-secondaire,5%), lighten($couleur-primaire,5%));
         opacity: 0;
         z-index: -1;
         transition: opacity 300ms ease-in-out;
     }
     &:hover{
+        box-shadow: 0px 6px 5px #0004;
         &::after{
             opacity: 1;
         }
